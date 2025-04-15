@@ -4,9 +4,9 @@
     font-family: "Formula Condensed";
     font-style: normal;
     font-weight: 700;
-    src: url(FormulaCondensed-Bold.otf) format("otf")
-
+    src: url(../Marco_Alpoim_2024/font/FormulaCondensedBold.ttf) format("ttf")
 }
+
 
       /* Style for the whole page */
       body, html {
@@ -361,7 +361,7 @@ header {
        overflow: hidden;
        border-radius: 10px;
        display: inline-block;
-     height: 100%;
+     height: auto;
      will-change: transform;
      }
  

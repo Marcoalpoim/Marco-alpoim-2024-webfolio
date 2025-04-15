@@ -4,7 +4,7 @@
     font-family: "Formula Condensed";
     font-style: normal;
     font-weight: 700;
-    src: url(FormulaCondensed-Bold.otf) format("otf")
+    src: url(../Marco_Alpoim_2024/font/FormulaCondensedBold.ttf) format("ttf")
 }
 
 
@@ -358,7 +358,7 @@ header {
   margin-top: 10rem;
     background-color: #22222200;
     color: white;
-    font-family: 'Arial', sans-serif;
+
     display: flex;
     justify-content: center;
     align-items: center;
