@@ -403,7 +403,7 @@ header a,header p {
     font-style: normal;
     font-weight: 800;
     height: .8em;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     line-height: 1;
     position: relative;
     text-transform: uppercase;
@@ -918,7 +918,7 @@ footer[data-v-cardsmain] {
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     line-height: 1;
     text-transform: uppercase
 }
