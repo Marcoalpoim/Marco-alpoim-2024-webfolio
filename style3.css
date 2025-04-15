@@ -398,7 +398,7 @@ header .bar:after,header .bar:before,header>* {
 
 header a,header p {
     color: currentColor;
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 2.2rem;
     font-style: normal;
     font-weight: 800;
@@ -581,7 +581,7 @@ main[data-v-cardsmain] {
   }
   nav a[data-v-aboutinfo] {
     display: inline-block;
-    font-family: "Formula Condensed", Helvetica, Arial, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 8rem;
     font-style: normal;
     font-weight: 800;
@@ -687,7 +687,7 @@ nav a[data-v-aboutinfo]:nth-child(3) {
     width: 100%;
 }
 .copyright[data-v-aboutinfo], .location[data-v-aboutinfo], .social p[data-v-aboutinfo] {
-    font-family: "Formula Condensed", Helvetica, Arial, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 2.4rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -914,7 +914,7 @@ footer[data-v-cardsmain] {
 
 .card p[data-v-cardsinfo] {
     color: var(--color-secondary);
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 800;
@@ -1206,7 +1206,7 @@ footer[data-v-cardsmain] {
 }
 
 [data-v-quote] .content {
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 4.5rem;
     font-style: normal;
     font-weight: 800;
@@ -1462,7 +1462,7 @@ footer[data-v-cardsmain] {
 
 
 [data-v-abouttext] .content {
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 2.6rem;
     font-style: normal;
     font-weight: 800;
@@ -1475,7 +1475,7 @@ footer[data-v-cardsmain] {
 }
 
 [data-v-abouttext2] .content {
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 800;
@@ -1486,7 +1486,7 @@ footer[data-v-cardsmain] {
 }
 [data-v-abouttext2] .content-title {
     text-indent: 60%;
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 2rem;
     font-style: normal;
     font-weight: 800;
@@ -1555,7 +1555,7 @@ footer[data-v-cardsmain] {
 
 [data-v-abouttext2] .content-data {
     color: #c9c9c9;
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size:1.7rem;
     font-style: normal;
     font-weight: 100;
@@ -1723,7 +1723,7 @@ p[data-v-cardstext] {
 }
 
 .label[data-v-cardstext] {
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 800;
@@ -1895,7 +1895,7 @@ p[data-v-cardstext] {
 }
 
 .index[data-v-cardstext],.title[data-v-cardstext],.year[data-v-cardstext] {
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 800;
@@ -2023,7 +2023,7 @@ p[data-v-cardstext] {
 
 .content[data-v-0afff8e6] {
     color: var(--color-secondary);
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 4.5rem;
     font-style: normal;
     font-weight: 800;
@@ -2068,7 +2068,7 @@ p[data-v-cardstext] {
 
 .background[data-v-cardstext2] {
     color: #343434;
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 7.2rem;
     font-style: normal;
     font-weight: 800;
@@ -2165,7 +2165,7 @@ a[data-v-cardstext2]:not(.card):focus-visible:before {
 }
 
 li[data-v-cardstext2],p[data-v-cardstext2],ul[data-v-cardstext2] {
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 800;
@@ -2370,7 +2370,7 @@ footer[data-v-footertext] {
 }
 
 a[data-v-footertext],p[data-v-footertext] {
-    font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 800;
