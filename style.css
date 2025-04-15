@@ -4,7 +4,7 @@
     font-family: "Formula Condensed";
     font-style: normal;
     font-weight: 700;
-    src: url(../Marco_Alpoim_2024/font/FormulaCondensedBold.ttf) format("ttf")
+    src: url(./font/FormulaCondensedBold.ttf) format("ttf")
 }
 
 
@@ -380,7 +380,7 @@ header {
  
  
  .staggered-text {
-  font-family: Formula Condensed, sans-serif;
+  font-family: "Formula Condensed";
      margin: 2dvw 1dvw 0px;
  }
  
@@ -399,7 +399,7 @@ header {
      animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1) forwards; /* Bounce animation */
  }
  .staggered-text2 {
-  font-family: Formula Condensed, sans-serif;
+  font-family: "Formula Condensed";
      margin: 2dvw 1dvw 0px;
  }
  
@@ -725,7 +725,7 @@ border: 1px solid white;
   line-height: 42px;
   padding: 30px 0 0px;
   color: white;
-  font-family: Formula Condensed, sans-serif;
+  font-family: "Formula Condensed";
   }
   
     /* Fade-in animation */
