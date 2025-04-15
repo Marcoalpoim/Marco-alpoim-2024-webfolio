@@ -918,7 +918,7 @@ footer[data-v-cardsmain] {
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 800;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
     line-height: 1;
     text-transform: uppercase
 }
