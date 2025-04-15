@@ -1108,6 +1108,17 @@ footer[data-v-cardsmain] {
 
 }
 
+.arrow-right{
+    display: block;
+      margin: 5px 5px 5px 0px;
+      width: 20px;
+      height: 20px;
+      border-top: 2px solid #ffffff;
+      border-left: 2px solid #ffffff;
+      transform: rotate(135deg);
+      transition: transform 0.5s ease;
+  }
+
 @keyframes shiny-btn {
 	0% {
 		-webkit-transform: scale(0) rotate(45deg);
@@ -1174,6 +1185,16 @@ footer[data-v-cardsmain] {
         overflow: hidden;
     
     }
+    .arrow-right{
+        display: block;
+          margin: 5px 5px 5px 0px;
+          width: 15px;
+          height: 15px;
+          border-top: 2px solid #000000;
+          border-left: 2px solid #000000;
+          transform: rotate(135deg);
+          transition: transform 0.5s ease;
+      }
 }
 
 
