@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap);
 @font-face {
-    font-family: "Formula Condensed";
+    font-family: "Formula Condensed, Inter, Helvetica, Arial, sans-serif";
     font-style: normal;
     font-weight: 700;
-    src: url(./font/FormulaCondensed-Bold.otf) format("otf")
+    src: url(../font/FormulaCondensed-Bold.otf) format("otf")
 }
 
 
@@ -379,7 +379,7 @@ header {
  
  
  .staggered-text {
-     font-family: "Formula Condensed";
+     font-family: "Formula Condensed, Inter, Helvetica, Arial, sans-serif";
      margin: 2dvw 1dvw 0px;
  }
  
@@ -398,7 +398,7 @@ header {
      animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1) forwards; /* Bounce animation */
  }
  .staggered-text2 {
-     font-family: "Formula Condensed";
+     font-family: "Formula Condensed, Inter, Helvetica, Arial, sans-serif";
      margin: 2dvw 1dvw 0px;
  }
  
@@ -724,7 +724,7 @@ border: 1px solid white;
   line-height: 42px;
   padding: 30px 0 0px;
   color: white;
-  font-family: "Formula Condensed";
+  font-family: "Formula Condensed, Inter, Helvetica, Arial, sans-serif";
   }
   
     /* Fade-in animation */
