@@ -483,7 +483,7 @@ opacity: 0;
 
 
  .staggered-project {
-    font-family: "Formula Condensed";
+    font-family: Formula Condensed, sans-serif;
     margin: 2dvw 0dvw 0px;
 }
 
@@ -654,7 +654,7 @@ rotate: 40deg;
 
 .info h1[data-v-51992d94] {
     color: var(--color-secondary);
-    font-family: "Formula Condensed", Helvetica, Arial, sans-serif;
+    font-family: Formula Condensed, sans-serif;
     font-size: 4.8rem;
     font-style: normal;
     font-weight: 800;
@@ -809,7 +809,7 @@ footer[data-v-bfdc6f28] {
     grid-area: social;
 }
 a[data-v-bfdc6f28], p[data-v-bfdc6f28] {
-    font-family: "Formula Condensed", Helvetica, Arial, sans-serif;
+    font-family: Formula Condensed, sans-serif;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 800;
