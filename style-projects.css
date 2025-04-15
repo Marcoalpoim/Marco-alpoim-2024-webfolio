@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap);
+
 @font-face {
     font-family: "Formula Condensed";
     font-style: normal;
     font-weight: 700;
-    src: url(./font/FormulaCondensed-Bold.otf) format("otf")
+    src: url(./font/FormulaCondensedBold.ttf) format("ttf")
 }
-
 
       /* Style for the whole page */
       body, html {
