@@ -413,7 +413,7 @@ header {
  .staggered-text2 {
   font-family: "Bebas Neue", sans-serif;
      margin: 2dvw 1dvw 0px;
-     letter-spacing: -1px;
+     letter-spacing: 0px;
  }
  
  .staggered-text2 span {
@@ -525,7 +525,7 @@ header {
   
   .staggeredtext-container {
     height: 11dvw;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
 
 }
     .staggered-text span {
