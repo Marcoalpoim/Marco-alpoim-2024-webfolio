@@ -492,7 +492,9 @@ opacity: 0;
  }
  
 
-
+ #staggered-project2, #staggered-project3, #staggered-project4, #staggered-project5, #staggered-project6 {
+    margin-left: 20px;
+}
  .staggered-project {
     font-family: "Bebas Neue", sans-serif;
     margin: 2dvw 0dvw 0px;
@@ -531,7 +533,9 @@ opacity: 0;
     #fadeDiv{
       margin-top: 0rem;
     }
-    
+    #staggered-project2, #staggered-project3, #staggered-project4, #staggered-project5, #staggered-project6 {
+        margin-left: 10px;
+    }
     .staggered-project-container {
       height: 11dvw;
   

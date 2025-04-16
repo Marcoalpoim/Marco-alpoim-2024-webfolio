@@ -523,7 +523,10 @@ header {
   #fadeDiv{
     margin-top: 7rem;
   }
-  
+  .staggered-text span.visible {
+ 
+    animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1) forwards; /* Bounce animation */
+}
   .staggeredtext-container {
     height: 11dvw;
     letter-spacing: -2px;
@@ -549,7 +552,7 @@ header {
         transform: translateY(50px); /* Start from below */
     }
     60% {
-        transform: translateY(-10px); /* Go above the final position */
+        transform: translateY(-5px); /* Go above the final position */
     }
     100% {
         transform: translateY(0); /* Settle in final position */
