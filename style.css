@@ -406,11 +406,16 @@ header {
   
  }
  
- .staggered-text span.visible {
+ .staggered-text span.visible2 {
      opacity: 1; /* Make it visible */
      transform: translateY(0); /* Move to original position */
      animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1) forwards; /* Bounce animation */
  }
+ .bounce-none {
+  opacity: 1; /* Make it visible */
+  transform: translateY(0); /* Move to original position */
+  animation: none; 
+}
  .staggered-text2 {
   font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
      margin: 2dvw 1dvw 0px;
@@ -482,7 +487,14 @@ header {
        margin: 0 auto;
  
      }
+     span video {
+      width: 15vw;
+       height: auto;
+       border-radius: inherit;
+       display: block;
+       margin: 0 auto;
  
+     }
      .image-container{
       display: flex;
           justify-content: center;
@@ -520,9 +532,7 @@ header {
 
 
  @media only screen and (max-width: 768px) {
-  #fadeDiv{
-    margin-top: 7rem;
-  }
+ 
   .staggered-text span.visible {
  
     animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1) forwards; /* Bounce animation */
@@ -602,7 +612,7 @@ header {
    .index{
     opacity: 0;
     transform: translateY(1%); /* Move to original position */
-    animation: index-slide-in 0.6s cubic-bezier(0.39,0.575,0.565,1) 2s forwards; /* Bounce animation */
+    animation: index-slide-in 0.6s cubic-bezier(0.39,0.575,0.565,1) 0s forwards; /* Bounce animation */
    }
  /* Bounce Keyframes */
  @keyframes index-slide-in {
@@ -645,7 +655,9 @@ border: 1px solid white;
     height:1.5rem;
     width: 1.5rem;
   }
-  
+  .index{
+    margin-top: 5rem;
+   }
 
 }
 

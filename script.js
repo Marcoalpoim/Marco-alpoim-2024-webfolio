@@ -45,22 +45,29 @@ document.getElementById('openMenu').addEventListener('click', function() {
 });
  
 
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.card');
+document.addEventListener('DOMContentLoaded', function () {
+  const cards = document.querySelectorAll('.card');
 
-    const revealCards = () => {
-        const triggerBottom = window.innerHeight / 4 * 4;
+  const revealCards = () => {
+      const isMobile = window.innerWidth <= 768;
 
-        cards.forEach(card => {
-            const cardTop = card.getBoundingClientRect().top;
+      const scrollThreshold = isMobile ? 100 : 100;
+      if (window.scrollY < scrollThreshold) return;
 
-            if (cardTop < triggerBottom) {
-                card.classList.add('visible');
-            } else {
-                card.classList.remove('visible');
-            }
-        });
-    };
+      const triggerBottom = isMobile
+          ? window.innerHeight / 4 * 4
+          : window.innerHeight / 4 * 4;
+
+      cards.forEach(card => {
+          const cardTop = card.getBoundingClientRect().top;
+
+          if (cardTop < triggerBottom) {
+              card.classList.add('visible');
+          } else {
+              card.classList.remove('visible');
+          }
+      });
+  };
 
     window.addEventListener('scroll', revealCards);
     revealCards(); // Initial check

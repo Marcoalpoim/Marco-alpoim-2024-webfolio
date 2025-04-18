@@ -900,7 +900,7 @@ footer[data-v-cardsmain] {
 }
 
 .card .meta[data-v-cardsinfo] {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     gap: var(--gap);
     grid-column: span 2;
@@ -984,7 +984,7 @@ footer[data-v-cardsmain] {
 }
 @media only screen and (max-width: 768px) {
     .card[type=featured][data-v-cardsinfo] {
-        --border:2rem;
+        --border:1rem;
         border-radius: 1rem;
         box-shadow: inset 20px 15rem 20rem 0 rgb(255 255 255 / 55%);
     }
@@ -1166,8 +1166,9 @@ footer[data-v-cardsmain] {
   
     .card[type=featured] .infoBtn-container[data-v-cardsinfo] {
         position: relative;
-        width: 18%;
+        width: auto;
         height: 110%;
+        padding: 5px 10px;
         border: 1px solid white;
         background-color: white;
         border-radius: 50rem;
@@ -1194,8 +1195,8 @@ footer[data-v-cardsmain] {
           margin: 5px 5px 5px 0px;
           width: 15px;
           height: 15px;
-          border-top: 2px solid #000000;
-          border-left: 2px solid #000000;
+          border-top: 3px solid #000000;
+          border-left: 3px solid #000000;
           transform: rotate(135deg);
           transition: transform 0.5s ease;
       }
