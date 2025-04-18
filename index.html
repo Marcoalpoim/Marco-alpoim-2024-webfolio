@@ -155,7 +155,7 @@
 
   <div class="typewriter-container">
 <h1>
-    <a href="" class="typewrite" data-period="1000" data-type='[ "    ", "Welcome", "Bem-Vindo", "Bienvenido" ]'>
+    <a href="" class="typewrite" data-period="1000" data-type='[ "    ", "Scroll Down...", "Please Scroll", "Did you Scroll?" ]'>
       <span class="wrap"></span>
     </a>
   </h1>
@@ -544,6 +544,11 @@
 
 
    <script> 
+   window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        window.location.reload();
+    }
+});
   document.addEventListener('DOMContentLoaded', () => {
     const timeoutIds = []; // Store all timeout IDs for cleanup
     
@@ -759,7 +764,7 @@ window.addEventListener("pageshow", function (event) {
 window.addEventListener('pageshow', function (event) {
     if (event.persisted) {
         // This page was loaded from the back/forward cache (via history.back etc.)
-        document.querySelector('.staggered-text').classList.add('bounce-none');
+        document.querySelector('.staggered-text span.visible').classList.add('bounce-none');
     }
 });
   </script>

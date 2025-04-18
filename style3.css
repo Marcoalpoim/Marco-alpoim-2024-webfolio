@@ -70,8 +70,8 @@
 
 @media only screen and (min-width: 960px) {
     :root {
-        --padding:7.5rem;
-        --min-padding: -7.5rem
+        --padding:5.5rem;
+        --min-padding: -5.5rem
     }
 }
 
@@ -586,7 +586,7 @@ main[data-v-cardsmain] {
     font-style: normal;
     font-weight: 800;
     height: .84em;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     line-height: 1;
     outline: none;
     padding: .02em 0;
@@ -668,7 +668,7 @@ nav a[data-v-aboutinfo]:nth-child(3) {
     }
 }
 .location[data-v-aboutinfo] {
-    align-self: flex-end;
+    align-self: center;
     grid-area: location;
 }
 .location a[data-v-aboutinfo] {

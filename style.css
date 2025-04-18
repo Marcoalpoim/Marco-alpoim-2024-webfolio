@@ -300,7 +300,7 @@ header {
       ". social"
       "menu menu"
       "copyright copyright";
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr auto 1fr 2rem;
   touch-action: none;
     position: fixed;
@@ -314,7 +314,7 @@ header {
     box-shadow: inset -20px -19rem 20rem 0 rgb(255 255 255 / 55%);
     color: var(--color-primary);
     z-index: 100;
-    row-gap: 4rem;
+    row-gap: 1rem;
     border: 1px solid #ffffff;
     border-bottom-left-radius:3rem;
     border-bottom-right-radius:3rem;
@@ -406,7 +406,7 @@ header {
   
  }
  
- .staggered-text span.visible2 {
+ .staggered-text span.visible {
      opacity: 1; /* Make it visible */
      transform: translateY(0); /* Move to original position */
      animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1) forwards; /* Bounce animation */
@@ -537,6 +537,10 @@ header {
  
     animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1) forwards; /* Bounce animation */
 }
+.staggered-text2 span.visible {
+
+  animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1)  forwards; /* Bounce animation */
+}
   .staggeredtext-container {
     height: 11dvw;
     
@@ -562,7 +566,7 @@ header {
         transform: translateY(50px); /* Start from below */
     }
     60% {
-        transform: translateY(-5px); /* Go above the final position */
+        transform: translateY(0px); /* Go above the final position */
     }
     100% {
         transform: translateY(0); /* Settle in final position */
@@ -655,9 +659,7 @@ border: 1px solid white;
     height:1.5rem;
     width: 1.5rem;
   }
-  .index{
-    margin-top: 5rem;
-   }
+ 
 
 }
 

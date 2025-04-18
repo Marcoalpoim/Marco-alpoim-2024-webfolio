@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const revealCards = () => {
       const isMobile = window.innerWidth <= 768;
 
-      const scrollThreshold = isMobile ? 100 : 100;
+      const scrollThreshold = isMobile ? 10 : 10;
       if (window.scrollY < scrollThreshold) return;
 
       const triggerBottom = isMobile
