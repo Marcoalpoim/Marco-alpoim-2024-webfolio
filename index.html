@@ -706,10 +706,37 @@ window.addEventListener('load', () => {
 
 
   <script>
-  window.addEventListener("pageshow", function (event) {
+
+document.querySelectorAll("a.card").forEach(link => {  
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    let href = this.href;
+    let div = document.getElementById("container");
+    let opacity = 1;
+    
+    let fadeOut = setInterval(() => {
+      if (opacity <= 0) {
+        clearInterval(fadeOut);
+        div.style.display = "none";
+      } else {
+        opacity -= 0.05;
+        div.style.opacity = opacity;
+      }
+    }, 30);
+    
+    setTimeout(() => {
+      document.body.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = href;
+      }, 300);
+    }, 30);
+  });
+});
+
+// Detecta se voltou via "back" e reaplica efeito
+window.addEventListener("pageshow", function (event) {
   if (event.persisted) {
-    // Página voltou do cache, reaplica o efeito
-    const div = document.getElementById("container");
+    let div = document.getElementById("container");
     div.style.display = "block";
     div.style.opacity = 0;
 
@@ -724,34 +751,6 @@ window.addEventListener('load', () => {
     }, 30);
   }
 });
-  /*
-document.querySelectorAll("a.card").forEach(link => { 
-    link.addEventListener("click", function (e) {
-      e.preventDefault(); // Prevent immediate navigation
-      let href = this.href;
-      
-      let div = document.getElementById("container");
-      let opacity = 1;
-      
-      let fadeOut = setInterval(() => {
-        if (opacity <= 0) {
-          clearInterval(fadeOut);
-          div.style.display = "none"; // Hide div completely
-        } else {
-          opacity -= 0.05;
-          div.style.opacity = opacity;
-        }
-      },30);
-      
-      // Delay navigation after fade-out (adjust timing if needed)
-      setTimeout(() => {
-        document.body.classList.add("fade-out");
-        setTimeout(() => {
-          window.location.href = href;
-        }, 300); // Delay before redirecting (adjust as needed)
-      }, 30); // Delay to match div fade-out
-    });
-  });  */
   </script>
 
 </body>
