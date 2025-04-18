@@ -544,9 +544,10 @@
 
 
    <script> 
-   window.addEventListener('pageshow', (event) => {
+window.addEventListener('pageshow', (event) => {
     if (event.persisted) {
-        window.location.reload();
+        // Limpa estados antigos e recomeça animação
+        startAnimations();
     }
 });
   document.addEventListener('DOMContentLoaded', () => {
