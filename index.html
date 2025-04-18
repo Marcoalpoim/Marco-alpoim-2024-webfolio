@@ -707,36 +707,45 @@ window.addEventListener('load', () => {
 
   <script>
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll("a.card").forEach(link => {   
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      let href = this.href;
-      let div = document.getElementById("container");
-    
+document.querySelectorAll("a.card").forEach(link => {  
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    let href = this.href;
+    let div = document.getElementById("container");
+    let opacity = 1;
 
-      let opacity = 1;
-      let fadeOut = setInterval(() => {
-        if (opacity <= 0) {
-          clearInterval(fadeOut);
-          div.style.display = "none";
-        } else {
-          opacity -= 0.05;
-          div.style.opacity = opacity;
-        }
-      }, 30);
+    let fadeOut = setInterval(() => {
+      if (opacity <= 0) {
+        clearInterval(fadeOut);
+        div.style.display = "none";
+      } else {
+        opacity -= 0.05;
+        div.style.opacity = opacity;
+      }
+    }, 30);
 
+    setTimeout(() => {
+      document.body.classList.add("fade-out");
       setTimeout(() => {
-        document.body.classList.add("fade-out");
-        setTimeout(() => {
-          window.location.href = href;
-        }, 300);
-      }, 30);
-    });
+        window.location.href = href;
+      }, 300);
+    }, 30);
   });
 });
 
+// Remove "fade-out" quando se volta com history.back
+window.addEventListener("pageshow", function (event) {
+  if (event.persisted || performance.getEntriesByType("navigation")[0].type === "back_forward") {
+    document.body.classList.remove("fade-out");
 
+    // (opcional) restaurar opacidade e display se necessário
+    let div = document.getElementById("container");
+    if (div) {
+      div.style.display = "block";
+      div.style.opacity = 1;
+    }
+  }
+});
 
   </script>
 
