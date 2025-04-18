@@ -707,50 +707,37 @@ window.addEventListener('load', () => {
 
   <script>
 
-document.querySelectorAll("a.card").forEach(link => {  
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    let href = this.href;
-    let div = document.getElementById("container");
-    let opacity = 1;
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("a.card").forEach(link => {   
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      let href = this.href;
+      let div = document.getElementById("container");
     
-    let fadeOut = setInterval(() => {
-      if (opacity <= 0) {
-        clearInterval(fadeOut);
-        div.style.display = "none";
-      } else {
-        opacity -= 0.05;
-        div.style.opacity = opacity;
-      }
-    }, 30);
-    
-    setTimeout(() => {
-      document.body.classList.add("fade-out");
+
+      let opacity = 1;
+      let fadeOut = setInterval(() => {
+        if (opacity <= 0) {
+          clearInterval(fadeOut);
+          div.style.display = "none";
+        } else {
+          opacity -= 0.05;
+          div.style.opacity = opacity;
+        }
+      }, 30);
+
       setTimeout(() => {
-        window.location.href = href;
-      }, 300);
-    }, 30);
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300);
+      }, 30);
+    });
   });
 });
 
-// Detecta se voltou via "back" e reaplica efeito
-window.addEventListener("pageshow", function (event) {
-  if (event.persisted) {
-    let div = document.getElementById("container");
-    div.style.display = "block";
-    div.style.opacity = 0;
 
-    let opacity = 0;
-    let fadeIn = setInterval(() => {
-      if (opacity >= 1) {
-        clearInterval(fadeIn);
-      } else {
-        opacity += 0.05;
-        div.style.opacity = opacity;
-      }
-    }, 30);
-  }
-});
+
   </script>
 
 </body>
