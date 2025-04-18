@@ -1167,10 +1167,10 @@ footer[data-v-cardsmain] {
     .card[type=featured] .infoBtn-container[data-v-cardsinfo] {
         position: relative;
         width: auto;
-        height: 110%;
+        height: 100%;
         padding: 5px 10px;
         border: 1px solid white;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0);
         border-radius: 50rem;
         transition: all 1s cubic-bezier(0.19,1,0.22,1);
         overflow: hidden;

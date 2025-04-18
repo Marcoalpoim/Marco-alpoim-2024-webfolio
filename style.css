@@ -387,7 +387,7 @@ header {
      justify-content: space-between;
      overflow: hidden;
      height: 10dvw;
-     margin: 5px;
+     margin-bottom: 5px;
      letter-spacing: 1px;
  }
  
@@ -418,7 +418,7 @@ header {
 }
  .staggered-text2 {
   font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
-     margin: 2dvw 1dvw 0px;
+     margin: 2dvw 0dvw 0px 1dvw;
   
  }
  
@@ -532,7 +532,12 @@ header {
 
 
  @media only screen and (max-width: 768px) {
- 
+  .img.expand {
+    width: 10vw; /* Final expanded width */
+  }
+  .line small {
+  display: none;}
+
   .staggered-text span.visible {
  
     animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1) forwards; /* Bounce animation */
@@ -542,22 +547,23 @@ header {
   animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1)  forwards; /* Bounce animation */
 }
   .staggeredtext-container {
-    height: 11dvw;
+    height: 13dvw;
     
 
 }
     .staggered-text span {
-        font-size: 12vw;
+        font-size: 14vw;
     }
     .staggered-text2 span {
-        font-size: 12vw;
+        font-size: 14vw;
     
     }
     .img {  
     border-radius: 5px;
     }
     .line {
-        height: 10vw;
+        height: 12vw;
+        margin: 1dvw 1dvw;
     }
 
  /* Bounce Keyframes */
@@ -573,6 +579,8 @@ header {
     }
 }
 }
+
+
 
 .hamburger-menu {
     left: 50%;
