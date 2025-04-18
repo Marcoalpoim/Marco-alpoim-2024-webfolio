@@ -185,8 +185,6 @@ header {
     flex-wrap: wrap;
     margin: 0 auto;
     opacity: 0;
-
-    backdrop-filter: blur(15px);
     transform: translateY(-300px);
     transition: all 1s cubic-bezier(0.19,1,0.22,1), opacity 3s cubic-bezier(0.19,1,0.22,1), transform 1s cubic-bezier(0.19,1,0.22,1) 0s; /* Smooth transition for style changes */
 
@@ -195,7 +193,7 @@ header {
   header.sticky {
     top: 2.5rem;
     justify-content: space-around;
-    width:70%;
+    width:85%;
     gap: 20%;
     z-index: 2;
     flex-direction: row;
@@ -210,7 +208,6 @@ header {
     color: white;
     border-radius: 50rem;
     border: 1px solid #ffffff78;
-    box-shadow: 0 4px 2px -2px #ffffff;
     transition: 1s all cubic-bezier(0.19,1,0.22,1), opacity 3s cubic-bezier(0.19,1,0.22,1), transform 1s cubic-bezier(0.19,1,0.22,1);
   }
 
