@@ -11,13 +11,13 @@
 }
 
 
-@font-face {
-  font-family: 'Formula Condensed';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Formula Condensed'), url('FormulaCondensed-Bold.woff') format('woff');
-  }
 
+@font-face {
+  font-family: "Formula Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/font/FormulaCondensed-Bold.woff2) format("woff2"),url(/font/FormulaCondensed-Bold.woff) format("woff")
+}
 
       /* Style for the whole page */
       body, html {
@@ -393,7 +393,7 @@ header {
  
  
  .staggered-text {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
      margin: 2dvw 1dvw 0px;
  }
  
@@ -412,7 +412,7 @@ header {
      animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1) forwards; /* Bounce animation */
  }
  .staggered-text2 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
      margin: 2dvw 1dvw 0px;
   
  }
@@ -744,7 +744,7 @@ border: 1px solid white;
   line-height: 42px;
   padding: 30px 0 0px;
   color: white;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
   }
   
     /* Fade-in animation */
