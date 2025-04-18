@@ -5,19 +5,18 @@
 
 
 .bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
+   font-family: "Formula Condensed";
   font-weight: 700;
   font-style: normal;
 }
 
 
 @font-face {
-  font-family: 'Formula Condensed';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Formula Condensed'), url('FormulaCondensed-Bold.woff') format('woff');
+    font-family: "Formula Condensed";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/font/FormulaCondensed-Bold.woff2) format("woff2"),url(/font/FormulaCondensed-Bold.woff) format("woff")
   }
-
 
       /* Style for the whole page */
       body, html {
@@ -496,7 +495,7 @@ opacity: 0;
     margin-left: 20px;
 }
  .staggered-project {
-    font-family: "Bebas Neue", sans-serif;
+     font-family: "Formula Condensed";
     margin: 2dvw 0dvw 0px;
 }
 
@@ -669,7 +668,7 @@ rotate: 40deg;
 
 .info h1[data-v-51992d94] {
     color: var(--color-secondary);
-    font-family: "Bebas Neue", sans-serif;
+     font-family: "Formula Condensed";
     font-size: 4.8rem;
     font-style: normal;
     font-weight: 800;
@@ -824,7 +823,7 @@ footer[data-v-bfdc6f28] {
     grid-area: social;
 }
 a[data-v-bfdc6f28], p[data-v-bfdc6f28] {
-    font-family: "Bebas Neue", sans-serif;
+     font-family: "Formula Condensed";
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 800;
