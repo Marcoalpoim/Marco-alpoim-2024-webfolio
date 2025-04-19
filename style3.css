@@ -900,7 +900,7 @@ footer[data-v-cardsmain] {
 }
 
 .card .meta[data-v-cardsinfo] {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     gap: var(--gap);
     grid-column: span 2;

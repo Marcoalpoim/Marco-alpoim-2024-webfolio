@@ -526,6 +526,11 @@ opacity: 0;
 
 
 @media only screen and (max-width: 768px) {
+    .staggered-project span.visible {
+        opacity: 1; /* Make it visible */
+        transform: translateY(0); /* Move to original position */
+        animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1) forwards; /* Bounce animation */
+    }
     #fadeDiv{
       margin-top: 0rem;
     }
@@ -552,7 +557,7 @@ opacity: 0;
           transform: translateY(50px); /* Start from below */
       }
       60% {
-          transform: translateY(-10px); /* Go above the final position */
+          transform: translateY(0px); /* Go above the final position */
       }
       100% {
           transform: translateY(0); /* Settle in final position */
