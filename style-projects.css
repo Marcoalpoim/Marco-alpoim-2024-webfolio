@@ -353,6 +353,7 @@ header {
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 999;
 }
 
 .close-btn svg {

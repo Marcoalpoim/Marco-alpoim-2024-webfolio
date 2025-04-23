@@ -50,9 +50,9 @@
 
 @media only screen and (prefers-color-scheme: light) {
     :root {
-        --color-secondary:#222;
-        --color-primary: #fff;
-        --color-text: #5f5f5f
+        --color-secondary:#ffffff;
+        --color-primary: #222;
+        --color-text: #969696;
     }
 }
 
@@ -121,7 +121,8 @@ body {
     font-family: "Formula Condensed";
     font-weight: 700;
     overflow-x: hidden;
-    position: relative
+    position: relative;
+    background-color: #222;
 }
 
 *,:after,:before {
@@ -612,6 +613,7 @@ main[data-v-cardsmain] {
     height: .84em;
     overflow: hidden;
     position: relative;
+    color: #000000;
   }
   nav a.nuxt-link-exact-active span[data-v-aboutinfo]:before {
     transform: translate(-.05em, -50%);
@@ -635,6 +637,7 @@ nav small[data-v-aboutinfo] {
     font-style: normal;
     letter-spacing: 1px;
     line-height: 1;
+    color: #000000;
 }
 nav small[data-v-aboutinfo] {
     font-family: "Neue Haas Grotesk Display", Helvetica, Arial, sans-serif;
@@ -935,7 +938,8 @@ footer[data-v-cardsmain] {
 
 .card .title[data-v-cardsinfo] {
     grid-area: title;
-    white-space: pre-line
+    white-space: pre-line;
+    color: #ffff;
 }
 
 .card .year[data-v-cardsinfo] {
@@ -1497,7 +1501,8 @@ footer[data-v-cardsmain] {
     padding: 0 2rem;
     text-align: left;
     text-indent: 50%;
-    text-transform: uppercase
+    text-transform: uppercase;
+    color: #ffff;
 }
 
 [data-v-abouttext2] .content {
@@ -1509,6 +1514,7 @@ footer[data-v-cardsmain] {
     line-height: 1;
     padding: 0 2rem;
     text-align: left;
+    color: #ffff;
 }
 [data-v-abouttext2] .content-title {
     text-indent: 60%;
@@ -1520,6 +1526,7 @@ footer[data-v-cardsmain] {
     line-height: 1;
     padding: 0 2rem;
     text-align: left;
+    color: #ffff;
 }
 [data-v-abouttext2] .content-subtitle {
     font-family: Inter, Helvetica, Arial, sans-serif;
@@ -1530,6 +1537,7 @@ footer[data-v-cardsmain] {
     line-height: 1;
     padding: 5px 2rem;
     text-align: left;
+    color: #ffff;
 }
 [data-v-abouttext2] .content-subtitle a{
     height: .84em;
@@ -1546,6 +1554,7 @@ footer[data-v-cardsmain] {
     position: relative;
     word-break: break-word;
     top: 0;
+    color: #ffff;
 }
 
 [data-v-abouttext2] .content-subtitle a::after {
@@ -1589,6 +1598,7 @@ footer[data-v-cardsmain] {
     line-height: 2rem;
     padding: 2rem 2rem 0rem;
     text-align: left;
+    color: #ffff;
 }
 [data-v-abouttext2] .content-data:first-child {
     padding-top: 0rem !important;
@@ -1604,6 +1614,7 @@ footer[data-v-cardsmain] {
     line-height: 1;
     padding: 0rem 0.5rem;
     text-align: left;
+    color: #ffff;
 }
 [data-v-abouttext2] .content-software {
     display: flex;
@@ -1617,6 +1628,7 @@ footer[data-v-cardsmain] {
     text-align: left;
     align-items: center;
     justify-content: space-between;
+    color: #ffff;
 }
 
 
@@ -1663,7 +1675,8 @@ footer[data-v-cardsmain] {
 
 [data-v-abouttext] p {
     padding-top: 1rem;
-    white-space: pre-line
+    white-space: pre-line;
+    color: #ffff;
 }
 
 [data-v-abouttext] p:not(:last-child) {
@@ -2197,7 +2210,8 @@ li[data-v-cardstext2],p[data-v-cardstext2],ul[data-v-cardstext2] {
     font-weight: 800;
     letter-spacing: 0.5px;
     line-height: 1;
-    text-transform: uppercase
+    text-transform: uppercase;
+    color: #ffff;
 }
 
 @media only screen and (min-width: 600px) {
@@ -2306,7 +2320,8 @@ footer[data-v-footertext] {
     color: var(--color-secondary);
     display: flex;
     grid-column: span 2;
-    justify-content: space-between
+    justify-content: space-between;
+    color: #ffff;
 }
 
 @media only screen and (min-width: 600px) {

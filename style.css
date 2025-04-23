@@ -19,14 +19,6 @@
   src: url(/font/FormulaCondensed-Bold.woff2) format("woff2"),url(/font/FormulaCondensed-Bold.woff) format("woff")
 }
 
-      /* Style for the whole page */
-      body, html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-    }
-
     /* Loader Styling */
     #loader {
         display: flex;
@@ -162,7 +154,7 @@
 header {
     top: 5%;
     align-items: center;
-    color: var(--color-secondary);
+    color: #ffff;
     display: flex;
     height: var(--header-height);
     justify-content: space-around;
@@ -355,7 +347,7 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .close-btn svg {
