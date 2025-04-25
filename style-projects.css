@@ -191,15 +191,15 @@ header {
   }
   
   header.sticky {
-    top: 2.5rem;
-    justify-content: space-around;
-    width:85%;
+  
+    justify-content: space-between;
+  
     gap: 20%;
     z-index: 2;
     flex-direction: row;
     align-content: center;
     flex-wrap: wrap;
-    padding: 0 2%;
+    padding: 0 5%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -479,30 +479,30 @@ opacity: 0;
 
 .staggered-project-container {
     align-items: center;
-     display: flex;
-     flex-wrap: nowrap;
-     gap: .22em;
-     justify-content: space-between;
-     overflow: hidden;
- 
-     margin: 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .22em;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin: 0px 0px;
  }
  
 
- #staggered-project2, #staggered-project3, #staggered-project4, #staggered-project5, #staggered-project6 {
-    margin-left: 20px;
+ #staggered-project, #staggered-project2, #staggered-project3, #staggered-project4, #staggered-project5, #staggered-project6 {
+    margin-right: 10px;
 }
  .staggered-project {
     font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
-    margin: 2dvw 0dvw 0px;
+    margin: 0dvw 0dvw;
 }
 
 .staggered-project span {
     display: inline-block;
     opacity: 0; /* Start invisible */
     font-size: 7rem;
+    line-height: 7.2rem;
     transform: translateY(100px); /* Start from below */
-    transition: opacity 0.3s cubic-bezier(0.39,0.575,0.565,1), transform 0.3s cubic-bezier(0.39,0.575,0.565,1); /* Transition for opacity and transform */
+    transition: opacity 0.3s cubic-bezier(0.86,0,0.07,1), transform 0.3s cubic-bezier(0.39,0.575,0.565,1); /* Transition for opacity and transform */
  
 }
 
@@ -517,7 +517,7 @@ opacity: 0;
         transform: translateY(150px); /* Start from below */
     }
     60% {
-        transform: translateY(-10px); /* Go above the final position */
+        transform: translateY(0px); /* Go above the final position */
     }
     100% {
         transform: translateY(0); /* Settle in final position */
@@ -535,15 +535,11 @@ opacity: 0;
     #fadeDiv{
       margin-top: 0rem;
     }
-    #staggered-project2, #staggered-project3, #staggered-project4, #staggered-project5, #staggered-project6 {
-        margin-left: 10px;
-    }
-    .staggered-project-container {
-      height: 11dvw;
-  
-  }
+
+ 
       .staggered-project span {
-          font-size: 7vw;
+        font-size: 4rem;
+        line-height: 4rem;
       }
       .img {  
       border-radius: 5px;
@@ -764,7 +760,8 @@ rotate: 40deg;
     font-weight: 400;
     letter-spacing: -.0026em;
     line-height: 1.4;
-    white-space: pre-line;
+      margin-top: 5%;
+    /* white-space: pre-line; */
     padding: 0;
 }
 .label[data-v-51992d94] {
@@ -878,7 +875,8 @@ a[data-v-bfdc6f28] {
     font-style: normal;
     font-weight: 400;
     letter-spacing: -.0026em;
-    line-height: 1rem;
+    line-height: 16px;
+    margin-bottom: 10px;
     white-space: pre-line;
     padding: 0;
     margin-left: 0px;
@@ -896,4 +894,35 @@ font-weight: 700;
 margin-left: 5px;
 transition: 1s all ease;
 cursor: pointer;
+}
+
+.marquee-animation {
+	height: auto;
+	display: block;
+	overflow: hidden;
+
+	white-space: nowrap;
+	cursor: pointer;
+    grid-column: span 2;
+    width: 100%;
+}
+.marquee-animation img {
+	position: relative;
+	will-change: transform;
+	display: inline-block;
+	font-size: 0;
+    height: 60px;
+    width: auto;
+    margin: 0 -1px;
+}
+.marquee-animation img.animated {
+	animation: slider-top-banner 30s linear 0s infinite
+}
+@keyframes slider-top-banner {
+	from {
+		transform: translateX(0)
+	}
+	to {
+		transform: translateX(-100%)
+	}
 }

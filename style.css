@@ -561,7 +561,7 @@ header {
  /* Bounce Keyframes */
  @keyframes bounce {
     0% {
-        transform: translateY(50px); /* Start from below */
+        transform: translateY(150px); /* Start from below */
     }
     60% {
         transform: translateY(0px); /* Go above the final position */
@@ -622,7 +622,11 @@ header {
  @keyframes index-slide-in {
   0% {
 opacity: 0;
-      transform: translateY(1%); /* Start from below */
+      transform: translateY(0%); /* Start from below */
+  }
+  80% {
+    opacity: 1;
+      transform: translateY(-100px); 
   }
   100% {
     opacity: 1;
