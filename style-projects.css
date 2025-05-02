@@ -478,17 +478,19 @@ opacity: 0;
 
 
 .staggered-project-container {
+    height: auto;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: .22em;
     justify-content: flex-start;
     overflow: hidden;
-    margin: 0px 0px;
+    margin: 0px;
+    padding-top: 15px;
  }
  
 
- #staggered-project, #staggered-project2, #staggered-project3, #staggered-project4, #staggered-project5, #staggered-project6 {
+ #staggered-project, #staggered-project2, #staggered-project3, #staggered-project4, #staggered-project5, #staggered-project6, #staggered-project7, #staggered-project8, #staggered-project9 {
     margin-right: 10px;
 }
  .staggered-project {
@@ -871,11 +873,11 @@ a[data-v-bfdc6f28] {
 .gobackbtn{
     color: #ffffff;
     font-family: "Inter", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: -.0026em;
-    line-height: 16px;
+    line-height: 18px;
     margin-bottom: 10px;
     white-space: pre-line;
     padding: 0;
@@ -905,6 +907,7 @@ cursor: pointer;
 	cursor: pointer;
     grid-column: span 2;
     width: 100%;
+    border-radius: 1rem;
 }
 .marquee-animation img {
 	position: relative;

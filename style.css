@@ -748,19 +748,30 @@ border: 1px solid white;
 }
 
 .typewriter-container{
-      display: grid;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      margin-top: 0rem;
-      visibility: hidden;
-     animation: fadeIntypewriter 1s ease 2s forwards;
+  position: fixed;
+  display: flex;
+  margin: auto;
+  width: auto;
+  min-width: 10%;
+  background-color: #dddddd3b;
+  border-radius:30px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0px 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  bottom: 0;
+
+  z-index: 9999;
+  animation: fadeIntypewriter 1s ease 2s forwards;
+  justify-content: center;
+  align-items: center;
 }
 
 .typewriter-container h1{
   font-size: 20px;
   line-height: 42px;
-  padding: 30px 0 0px;
+  padding: 0px;
   color: white;
   font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
   }
@@ -777,6 +788,89 @@ border: 1px solid white;
       }
   }
 
+  .scroll-animation {
+    display: flex;
+        position: relative;
+        height: 50px;
+        width: 100%;
+        justify-content: center;
+  }
+  
+  .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  
+  .chevron:before,
+  .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+  }
+  
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  
+  .text {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
+  }
+  
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
   body {
     transition: opacity 0.3s ease-in-out;
   }

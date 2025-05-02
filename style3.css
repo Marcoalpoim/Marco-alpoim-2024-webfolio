@@ -920,6 +920,13 @@ footer[data-v-cardsmain] {
     position: relative;
 }
 
+.card .meta[data-v-cardsinfo]  .infoBtn-container[data-v-cardsinfo]:hover {
+
+    padding: 7% 15%;
+ 
+}
+
+
 .card p[data-v-cardsinfo] {
     color: var(--color-secondary);
      font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
@@ -1035,7 +1042,7 @@ footer[data-v-cardsmain] {
 
 @media only screen and (min-width: 600px) {
     .card[type=featured] .image[data-v-cardsinfo] {
-        padding-top:88%
+        padding-top:58%
     }
 }
 
@@ -1511,7 +1518,7 @@ footer[data-v-cardsmain] {
     color: #ffff;
 }
 [data-v-abouttext2] .content-title {
-    text-indent: 60%;
+    text-indent: 70%;
      font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
     font-size: 2rem;
     font-style: normal;

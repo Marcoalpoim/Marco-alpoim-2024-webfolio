@@ -18,7 +18,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco Alpoim</title>
-
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style3.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -106,7 +108,7 @@
             <span class="line">
                 <span class="img" >
                     <span class="image-container">
-                <img src="./pintura-all/relogios.png" alt=""></span>
+                <img src="./relogios/relogios.png" alt=""></span>
             </span>
             <small>18</small>
         </span>
@@ -152,7 +154,7 @@
 <!--TETETE-->
 
 
-
+<!-- TYPERWRITER 
   <div class="typewriter-container">
 <h1>
     <a href="" class="typewrite" data-period="1000" data-type='[ "    ", "Scroll Down...", "Please Scroll", "Did you Scroll?" ]'>
@@ -160,9 +162,26 @@
     </a>
   </h1>
 </div>
-<!--FIRST THREE-->
+-->
+<div class="scroll-animation" id="onscrollremove">
+    <div class="chevron"></div>
+    <div class="chevron"></div>
+    <div class="chevron"></div>
 
+  </div>
+<script>
+    let hasScrolled = false;
 
+window.addEventListener('scroll', function() {
+  if (!hasScrolled) {
+    const divToRemove = document.getElementById('onscrollremove');
+    if (divToRemove) {
+      divToRemove.remove();
+    }
+    hasScrolled = true;
+  }
+});
+</script>
 <div class="index">
 
 
@@ -173,45 +192,49 @@
             <div class="image" data-v-cardsinfo=""><img src="./telepizza/telepizza-banner.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./telepizza/telepizza-banner.png 250w, ./telepizza/telepizza-banner.png 300w, ./telepizza/telepizza-banner.png 500w, ./telepizza/telepizza-banner.png 750w, ./telepizza/telepizza-banner.png 1500w" data-v-cardsinfo=""></div> 
 
         <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">SOME OF MY WORK AT TELEPIZZA PT</p> 
-          <p class="year" data-v-cardsinfo="">2024</p></div></a> <!----> 
+          <p class="year" data-v-cardsinfo="">2024-2025</p></div></a> <!----> 
 
           <a scale="1" type="small" haslink="/02-ssam.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="/02-ssam.html"><div class="image" data-v-cardsinfo=""><img src="./ssam/ssam.gif" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./ssam/ssam.gif 250w, ./ssam/ssam.gif 300w, ./ssam/ssam.gif 500w, ./ssam/ssam.gif 750w, ./ssam/ssam.gif 1500w" data-v-cardsinfo=""></div> <!----> <div class="meta" data-v-cardsinfo="">
             <p class="title" data-v-cardsinfo="">Sintra Street Art Mapping</p> <p class="year" data-v-cardsinfo="">2024</p></div></a> 
 
-          <a scale="1" type="small" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="/03-computer_says_no.html">
+          <a scale="1" type="small" haslink="/03-computer_says_no.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="/03-computer_says_no.html">
             <div class="image" data-v-cardsinfo="">
                 
                <video src="./computersaysno/computersaysno-intro.mp4"  playsinline="" muted="muted" autoplay="autoplay" loop="loop" loading="lazy" class="img" data-v-cardsinfo=""></video>
     
             </div> 
-            <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">Computer Says No</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
-     <!---->
-          
+            <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">Computer Says No</p> <p class="year" data-v-cardsinfo="">2023</p></div></a> 
+ 
 
-
+ <!--///////////////////////////////--> 
+  
 <!--SECOND THREE-->
-
- <a scale="1" type="small" haslink="/" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./04-unplannedsocialbias.html">
+ <!--machinelearning-->
+ <a scale="1" type="small" haslink="/04-unplannedsocialbias.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./04-unplannedsocialbias.html">
     <div class="image" data-v-cardsinfo="">
        <video src="./theunplannedhumanbiasofmachinelearning/poster-intro.mp4"  playsinline="" muted="muted" autoplay="autoplay" loop="loop" loading="lazy" class="img" data-v-cardsinfo=""></video></div> 
     <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">The unplanned social bias of machine learning</p> <p class="year" data-v-cardsinfo="">2022</p></div></a>
-    
-    <!----> <!---->
+
+      <!--Bias-->
+<a  scale="1" type="small" haslink="/05-facing_the_machine_learning_bias.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./05-facing_the_machine_learning_bias.html">
+    <div class="image" data-v-cardsinfo=""><img src="./facingthemachine-learningbias-project/facing-book.gif" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px"  data-v-cardsinfo=""></div> <!----> 
+    <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">FACING THE MACHINE LEARNING BIAS</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
       
-<a  scale="1" type="small" haslink="/05-facing_the_machine_learning_bias.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./05-facing_the_machine_learning_bias.html"><div class="image" data-v-cardsinfo=""><img src="./facingthemachine-learningbias-project/facing-book.gif" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px"  data-v-cardsinfo=""></div> <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">FACING THE MACHINE LEARNING BIAS</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
-      
-<a  scale="2" type="large" haslink="/06-humanxcomputer.html" class="card" style="color:#2d763a" data-v-cardsinfo="" data-v-cardsmain="" href="./06-humanxcomputer.html"><div class="image" data-v-cardsinfo=""><img src="./humanxrobots/human-x-man-pos2t.gif" alt="" loading="lazy" sizes="(max-width: 375px) 500px, (max-width: 768px) 600px, (max-width: 1200px) 1000px, (max-width: 1500px) 1500px, 2500px"  data-v-cardsinfo=""></div> <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">Human x Computer</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
+<!--humanxcomputer-->
+<a  scale="2" type="large" haslink="/06-humanxcomputer.html" class="card" style="color:#2d763a" data-v-cardsinfo="" data-v-cardsmain="" href="./06-humanxcomputer.html">
+    <div class="image" data-v-cardsinfo=""><img src="./humanxrobots/human-x-man-pos2t.gif" alt="" loading="lazy" sizes="(max-width: 375px) 500px, (max-width: 768px) 600px, (max-width: 1200px) 1000px, (max-width: 1500px) 1500px, 2500px"  data-v-cardsinfo=""></div> <!----> 
+    <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">Human x Computer</p> <p class="year" data-v-cardsinfo="">2021</p></div></a> 
   
     
-<!----> <!---->
+   <!--///////////////////////////////--> 
 
-    <!----> <!---->
+    <!--game-->
     <a href="https://2022.fbaul-dcnm.pt/marco_alpoim/jogo_versao1/index.html" target="_blank" scale="2" type="featured" haslink="https://2022.fbaul-dcnm.pt/marco_alpoim/jogo_versao1/index.html" class="card" style="color:#fff" data-v-cardsinfo="" data-v-cardsmain="" bright="true">
     
             <p class="label" data-v-cardsinfo="">Special Project</p> 
             <div class="meta" data-v-cardsinfo="">
                 <p class="title" data-v-cardsinfo="">Road Acident Game 2.0</p> 
-                <p class="year" data-v-cardsinfo="">2021</p>
+                <p class="year" data-v-cardsinfo="">2023</p>
                 <span class="icon svelte-3dn2ld"><!---->
                    </span>
                 <div class="infoBtn-container" data-v-cardsinfo="">
@@ -223,119 +246,133 @@
             <div class="image" data-v-cardsinfo="">
                 <video src="./game1/gamepreview.mp4"  playsinline="" muted="muted" autoplay="autoplay" loop="loop" loading="lazy" class="img" data-v-cardsinfo=""></video>
             </div> 
-        </a><!----> 
+        </a>
+        <!--///////////////////////////////--> 
     <!--THIRD THREE-->
-    <a data-slug="maneken" scale="2" type="large" haslink="/projects/maneken" class="card" style="color:#0050b7" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/maneken">
+
+    <!--marshmello-->
+    <a    scale="2" type="large" haslink="07-marsmellowshoebox.html" class="card" style="color:#0050b7" data-v-cardsinfo="" data-v-cardsmain="" href="./07-marsmellowshoebox.html">
         <div class="image" data-v-cardsinfo="">
       <img src="./marsmellow-project/marsmellow-box.png" alt="" loading="lazy" sizes="(max-width: 375px) 500px, (max-width: 768px) 600px, (max-width: 1200px) 1000px, (max-width: 1500px) 1500px, 2500px" srcset="./marsmellow-project/marsmellow-box.png 500w, ./marsmellow-project/marsmellow-box.png 600w, ./marsmellow-project/marsmellow-box.png 1000w, ./marsmellow-project/marsmellow-box.png 1500w, ./marsmellow-project/marsmellow-box.png 2500w" data-v-cardsinfo="">
     </div> <!----> 
     <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">MARSMELLOW X VANS (CONCEPT)</p> 
-      <p class="year" data-v-cardsinfo="">2023</p></div></a> <!----> 
+      <p class="year" data-v-cardsinfo="">2019</p></div></a> <!----> 
 
-      <a data-slug="wepresent" scale="1" type="small" haslink="/projects/wepresent" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/wepresent">
+
+      <!--mood-->
+      <a scale="1" type="small" haslink="/08-projeto-mood.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./08-projeto-mood.html">
         <div class="image" data-v-cardsinfo=""><img src="./mood-project/mood-logo.gif" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./mood-project/mood-logo.gif 250w, ./mood-project/mood-logo.gif 300w, ./mood-project/mood-logo.gif 500w, ./mood-project/mood-logo.gif 750w, ./mood-project/mood-logo.gif 1500w" data-v-cardsinfo=""></div>
-        
-        
-        <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">PROJETO MOOD</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
+    <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">PROJETO MOOD</p> <p class="year" data-v-cardsinfo="">2021</p></div></a> 
  <!---->
-      
-      <a data-slug="5-am-a-service-dao" scale="1" type="small" haslink="/projects/5-am-a-service-dao" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/5-am-a-service-dao"><div class="image" data-v-cardsinfo=""><img src="./roda-bicicleta-project/roda-banner.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./roda-bicicleta-project/roda-banner.png 250w, ./roda-bicicleta-project/roda-banner.png 300w, ./roda-bicicleta-project/roda-banner.png 500w, ./roda-bicicleta-project/roda-banner.png 750w, ./roda-bicicleta-project/roda-banner.png 1500w" data-v-cardsinfo=""></div> <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">RODA DA BICICLETA - MARCEL DUCHAMP 1913</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
-
-
-
-<!--FOURTH THREE-->
-
-  <a data-slug="5-am-a-service-dao" scale="1" type="small" haslink="/projects/5-am-a-service-dao" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./revista-creative-project/creative-banner.png"><div class="image" data-v-cardsinfo=""><img src="./revista-creative-project/creative-banner.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./revista-creative-project/creative-banner.png 250w, ./revista-creative-project/creative-banner.png 300w, ./revista-creative-project/creative-banner.png 500w, ./revista-creative-project/creative-banner.png 750w, ./revista-creative-project/creative-banner.png 1500w" data-v-cardsinfo=""></div> <!----> <div class="meta" data-v-cardsinfo="">
-    <p class="title" data-v-cardsinfo="">REVISTA CULTURAL CREATIVE</p> <p class="year" data-v-cardsinfo="">2019</p></div></a> 
-
-  <a data-slug="wepresent" scale="1" type="small" haslink="/projects/wepresent" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/wepresent">
+        <!--staybox-->
+ <a   scale="1" type="small" haslink="/11-stayboxfestival.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./11-stayboxfestival.html">
     <div class="image" data-v-cardsinfo=""><img src="./stay-box-project/staybox-banner.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./stay-box-project/staybox-banner.png 250w, ./stay-box-project/staybox-banner.png 300w, ./stay-box-project/staybox-banner.png 500w, ./stay-box-project/staybox-banner.png 750w, ./stay-box-project/staybox-banner.png 1500w" data-v-cardsinfo=""></div> 
-    <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">PROJETO MOOD</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
+    <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">STAYBOX FESTIVAL</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
      
-    <a data-slug="wepresent" scale="1" type="small" haslink="/projects/wepresent" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/wepresent">
-        <div class="image" data-v-cardsinfo=""><img src="./epilatornintendo/epilator-nintendo.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./epilatornintendo/epilator-nintendo.png 250w, ./epilatornintendo/epilator-nintendo.png 300w, ./epilatornintendo/epilator-nintendo.png 500w, ./epilatornintendo/epilator-nintendo.png 750w, ./epilatornintendo/epilator-nintendo.png 1500w" data-v-cardsinfo=""></div> 
-        <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">PROJETO MOOD</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
+
+
+   <!--///////////////////////////////--> 
+<!--FOURTH THREE-->
+ <!--creative-->
+  <a  scale="1" type="small" haslink="/10-revistacreative.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./10-revistacreative.html"><div class="image" data-v-cardsinfo=""><img src="./revista-creative-project/creative-banner.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px"  data-v-cardsinfo=""></div> <!----> <div class="meta" data-v-cardsinfo="">
+    <p class="title" data-v-cardsinfo="">REVISTA CULTURAL CREATIVE</p> <p class="year" data-v-cardsinfo="">2019</p></div></a> 
+ <!--rodadebicicleta-->
+    <a  scale="1" type="small" haslink="./09-rodaduchamps.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./09-rodaduchamps.html">
+        <div class="image" data-v-cardsinfo=""><img src="./roda-bicicleta-project/roda-banner.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" data-v-cardsinfo=""></div> 
+            <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">RODA DA BICICLETA - MARCEL DUCHAMP 1913</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
+   
+ <!--epilator-->
+    <a scale="1" type="small" haslink="/12-epilatorn64.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./12-epilatorn64.html">
+        <div class="image" data-v-cardsinfo=""><img src="./epilatornintendo/epilator-nintendo.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px"  data-v-cardsinfo=""></div> 
+        <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">EPILATOR N64</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
       
-      
-        <a data-slug="wepresent" scale="1" type="small" haslink="/projects/wepresent" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/wepresent">
-            <div class="image" data-v-cardsinfo=""><img src="./ruadarosa/rua-da-rosa-banner2.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./ruadarosa/rua-da-rosa-banner2.png 250w, ./ruadarosa/rua-da-rosa-banner2.png 300w, ./ruadarosa/rua-da-rosa-banner2.png 500w, ./ruadarosa/rua-da-rosa-banner2.png 750w, ./ruadarosa/rua-da-rosa-banner2.png 1500w" data-v-cardsinfo=""></div> 
-            <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">PROJETO MOOD</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
+       <!--ruadarosa-->
+        <a   scale="1" type="small" haslink="/13-ruadarosa.html"  class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./13-ruadarosa.html">
+            <div class="image" data-v-cardsinfo=""><img src="./ruadarosa/rua-da-rosa-2.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px"  data-v-cardsinfo=""></div> 
+            <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">PROJETO RUA DA ROSA</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
                 
-<!---->
-      <!----> <!---->
-      <a href="https://www.youtube.com/watch?v=-4jh2533w2s" target="_blank" scale="2" type="featured" haslink="https://www.youtube.com/watch?v=-4jh2533w2s" class="card" style="color:#fff" data-v-cardsinfo="" data-v-cardsmain="" bright="true">
-    
-        <p class="label" data-v-cardsinfo="">Featured Project</p> 
-        <div class="meta" data-v-cardsinfo="" >
-            <p class="title" data-v-cardsinfo="">Adobe XD Masterclass in San Fransisco</p> 
-            <p class="year" data-v-cardsinfo="">2018</p>
-            <div class="infoBtn-container" data-v-cardsinfo="">
-                <p class="infoBtn" data-v-cardsinfo=""><svg width="25" height="25" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.675318 7.84315L0.675318 6.4907L11.4153 6.4907L6.68178 1.75713L7.63645 0.802462L14.0009 7.16692L7.63645 13.5314L6.68178 12.5767L11.4153 7.84315L0.675318 7.84315Z" fill="white" class="svelte-wnl227"></path></svg></p>
-            </div>
-           
-        
-        </div>
-        <div class="image" data-v-cardsinfo="">
-            <img src="./pintura-all/livrodeartista.png" alt="" loading="lazy" sizes="(max-width: 375px) 500px, (max-width: 768px) 600px, (max-width: 1200px) 1000px, (max-width: 1500px) 1500px, 2500px" srcset="./pintura-all/livrodeartista.png 500w, ./pintura-all/livrodeartista.png 600w, ./pintura-all/livrodeartista.png 1000w, ./pintura-all/livrodeartista.png 1500w, ./pintura-all/livrodeartista.png 2500w" data-v-cardsinfo="">
-        </div> 
-    </a><!----> 
+   <!--///////////////////////////////--> 
     <!--fifth THREE-->
-    <a data-slug="wepresent" scale="1" type="small" haslink="/projects/wepresent" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/wepresent">
-        <div class="image" data-v-cardsinfo=""><img src="./pithoi-project/pithoi-2.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./pithoi-project/pithoi-2.png 250w, ./pithoi-project/pithoi-2.png 300w, ./pithoi-project/pithoi-2.png 500w, ./pithoi-project/pithoi-2.png 750w, ./pithoi-project/pithoi-2.png 1500w" data-v-cardsinfo=""></div>
-        
-        
+
+     <!--pithoi-->
+    <a scale="1" type="small" haslink="/15-pithoi.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./14-pithoi.html">
+        <div class="image" data-v-cardsinfo=""><img src="./pithoi-project/pithoi-2.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" data-v-cardsinfo=""></div>
  <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">PÍTHOI - SELF WATERING VASE</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
 
-    <a data-slug="wepresent" scale="1" type="small" haslink="/projects/wepresent" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/wepresent">
-        <div class="image" data-v-cardsinfo=""><img src="./pintura-all/cultural-paintsculpture.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./pintura-all/cultural-paintsculpture.png 250w, ./pintura-all/cultural-paintsculpture.png 300w, ./pintura-all/cultural-paintsculpture.png 500w, ./pintura-all/cultural-paintsculpture.png 750w, ./pintura-all/cultural-paintsculpture.png 1500w" data-v-cardsinfo=""></div>
+ <!--culturae-->
+
+    <a scale="1" type="small" haslink="/15-cultural.html"  class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./15-cultural.html">
+        <div class="image" data-v-cardsinfo=""><img src="./culturalidentity/banner-cultural.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px"  data-v-cardsinfo=""></div>
+ <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">CULTURAE IDENTITATIS</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
+
+  <!--timeandspace-->
+      <a  scale="1" type="small" haslink="/16-timeandspace.html"  class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./16-timeandspace.html">
+        <div class="image" data-v-cardsinfo=""><img src="./timeandspace/timeandspace.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" data-v-cardsinfo=""></div>
         
-        
- <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">CULTURAL STUFF</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
+ <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">LOST IN TIME</p> <p class="year" data-v-cardsinfo="">2019</p></div></a> 
 
-      <a data-slug="wepresent" scale="1" type="small" haslink="/projects/wepresent" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/wepresent">
-        <div class="image" data-v-cardsinfo=""><img src="./pintura-all/timeandspace.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./pintura-all/timeandspace.png 250w, ./pintura-all/timeandspace.png 300w, ./pintura-all/timeandspace.png 500w, ./pintura-all/timeandspace.png 750w, ./pintura-all/timeandspace.png 1500w" data-v-cardsinfo=""></div>
-        
-        
- <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">PROJETO MOOD</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
-
-      
-      <a data-slug="5-am-a-service-dao" scale="1" type="small" haslink="/projects/5-am-a-service-dao" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/5-am-a-service-dao"><div class="image" data-v-cardsinfo=""><img src="./pintura-all/relogios.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./pintura-all/relogios.png 250w, ./pintura-all/relogios.png 300w, ./pintura-all/relogios.png 500w, ./pintura-all/relogios.png 750w, ./pintura-all/relogios.png 1500w" data-v-cardsinfo=""></div> <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">RODA DA BICICLETA - MARCEL DUCHAMP 1913</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
- <!---->
-<!--SIX THREE-->
-<a data-slug="maneken" scale="2" type="large" haslink="/projects/maneken" class="card" style="color:#0050b7" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/maneken">
-    <div class="image" data-v-cardsinfo=""><img src="./pintura-all/pubgmascott.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./pintura-all/pubgmascott.png 250w, ./pintura-all/pubgmascott.png 300w, ./pintura-all/pubgmascott.png 500w, ./pintura-all/pubgmascott.png 750w, ./pintura-all/pubgmascott.png 1500w" data-v-cardsinfo=""></div> 
-
-<div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">SOME OF MY WORK AT TELEPIZZA PT</p> 
-  <p class="year" data-v-cardsinfo="">2024</p></div></a> <!----> 
-<a data-slug="5-am-a-service-dao" scale="1" type="small" haslink="/projects/5-am-a-service-dao" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="#"><div class="image" data-v-cardsinfo=""><img src="./pintura-all/c-virus.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./pintura-all/c-virus.png 250w, ./pintura-all/c-virus.png 300w, ./pintura-all/c-virus.png 500w, ./pintura-all/c-virus.png 750w, ./pintura-all/c-virus.png 1500w" data-v-cardsinfo=""></div> <!----> <div class="meta" data-v-cardsinfo="">
-    <p class="title" data-v-cardsinfo="">C-VIRUS</p> <p class="year" data-v-cardsinfo="">2019</p></div></a> 
-
-  <a data-slug="wepresent" scale="1" type="small" haslink="/projects/wepresent" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/wepresent">
-    <div class="image" data-v-cardsinfo=""><img src="./pintura-all/apismellifera.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./pintura-all/apismellifera.png 250w, ./pintura-all/apismellifera.png 300w, ./pintura-all/apismellifera.png 500w, ./pintura-all/apismellifera.png 750w, ./pintura-all/apismellifera.png 1500w" data-v-cardsinfo=""></div> 
-    <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">PROJETO MOOD</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
-     
-<!---->
-<!--SEVENTH THREE-->
-
-<a data-slug="5-am-a-service-dao" scale="1" type="small" haslink="/projects/5-am-a-service-dao" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="#"><div class="image" data-v-cardsinfo=""><img src="./pintura-all/avominguante.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./pintura-all/avominguante.png 250w, ./pintura-all/avominguante.png 300w, ./pintura-all/avominguante.png 500w, ./pintura-all/avominguante.png 750w, ./pintura-all/avominguante.png 1500w" data-v-cardsinfo=""></div> <!----> <div class="meta" data-v-cardsinfo="">
-    <p class="title" data-v-cardsinfo="">C-VIRUS</p> <p class="year" data-v-cardsinfo="">2019</p></div></a> 
-
-  <a data-slug="wepresent" scale="1" type="small" haslink="/projects/wepresent" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/wepresent">
-    <div class="image" data-v-cardsinfo=""><img src="./pintura-all/olivroquenaosabiaoquequeriaser.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./pintura-all/olivroquenaosabiaoquequeriaser.png 250w, ./pintura-all/olivroquenaosabiaoquequeriaser.png 300w, ./pintura-all/olivroquenaosabiaoquequeriaser.png 500w, ./pintura-all/olivroquenaosabiaoquequeriaser.png 750w, ./pintura-all/olivroquenaosabiaoquequeriaser.png 1500w" data-v-cardsinfo=""></div> 
-    <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">PROJETO MOOD</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
-    <a data-slug="maneken" scale="2" type="large" haslink="/projects/maneken" class="card" style="color:#0050b7" data-v-cardsinfo="" data-v-cardsmain="" href="https://www.marvinschwaibold.com/projects/maneken">
-        <div class="image" data-v-cardsinfo=""><img src="./pintura-all/cs-asite.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" srcset="./pintura-all/cs-asite.png 250w, ./pintura-all/cs-asite.png 300w, ./pintura-all/cs-asite.png 500w, ./pintura-all/cs-asite.png 750w, ./pintura-all/cs-asite.png 1500w" data-v-cardsinfo=""></div> 
+   <!--RELOGIOS-->
+      <a scale="1" type="small" haslink="/17-relogios.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./17-relogios.html"><div class="image" data-v-cardsinfo="">
+        <img src="./relogios/relogios.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" data-v-cardsinfo=""></div> <!----> 
+        <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">tribute to salvador dalí</p> <p class="year" data-v-cardsinfo="">2018</p></div></a> 
+   
+      <!--///////////////////////////////--> 
+        <!--livrodeartista-->
+        <a href="./18-livrodeartista.html" target="_blank" scale="2" type="featured" haslink="./18-livrodeartista.html" class="card" style="color:#fff" data-v-cardsinfo="" data-v-cardsmain="" bright="true">
     
-    <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">SOME OF MY WORK AT TELEPIZZA PT</p> 
-      <p class="year" data-v-cardsinfo="">2024</p></div></a> <!---->    
+            <p class="label" data-v-cardsinfo="">CERTIFIED Project</p> 
+            <div class="meta" data-v-cardsinfo="" >
+                <p class="title" data-v-cardsinfo="">LIVRO DE ARTISTA MARCO ALPOIM</p> 
+                <p class="year" data-v-cardsinfo="">2018</p>
+                <div class="infoBtn-container" data-v-cardsinfo="">
+                    <p class="infoBtn" data-v-cardsinfo=""><svg width="25" height="25" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.675318 7.84315L0.675318 6.4907L11.4153 6.4907L6.68178 1.75713L7.63645 0.802462L14.0009 7.16692L7.63645 13.5314L6.68178 12.5767L11.4153 7.84315L0.675318 7.84315Z" fill="white" class="svelte-wnl227"></path></svg></p>
+                </div>
+               
+            
+            </div>
+            <div class="image" data-v-cardsinfo="">
+                <img src="./livrodeartista/lartista-banner.png" alt="" loading="lazy" sizes="(max-width: 375px) 500px, (max-width: 768px) 600px, (max-width: 1200px) 1000px, (max-width: 1500px) 1500px, 2500px" data-v-cardsinfo="">
+            </div> 
+        </a>
+
+   <!--///////////////////////////////--> 
+<!--SIX THREE-->
+<a    scale="2" type="large" haslink="/19-mascottpubg.html"  class="card" style="color:#0050b7" data-v-cardsinfo="" data-v-cardsmain="" href="./19-mascottpubg.html">
+    <div class="image" data-v-cardsinfo=""><img src="./mascott-pubg/mascott-bannerfinal.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" data-v-cardsinfo=""></div> 
+
+<div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">SPLASH ART CONCEPT (PUBG)</p> 
+  <p class="year" data-v-cardsinfo="">2021</p></div></a> <!----> 
+<a  scale="1" type="small"  haslink="/20-c-virus.html"  class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./20-c-virus.html"><div class="image" data-v-cardsinfo=""><img src="./c-virus/c-virus.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px"  data-v-cardsinfo=""></div> <!----> <div class="meta" data-v-cardsinfo="">
+    <p class="title" data-v-cardsinfo="">SPLASH ART CONCEPT (C-VIRUS)</p> <p class="year" data-v-cardsinfo="">2021</p></div></a> 
+
+  <a   scale="1" type="small"  haslink="/21-abelhaeuropeia.html"  class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./21-abelhaeuropeia.html">
+    <div class="image" data-v-cardsinfo=""><img src="./abelha/abelha-banner.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" data-v-cardsinfo=""></div> 
+    <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">ABELHA EUROPEIA</p> <p class="year" data-v-cardsinfo="">2021</p></div></a> 
+     
+   <!--///////////////////////////////--> 
+<!--SEVENTH THREE-->
+<!--avominguante-->
+<a  scale="1" type="small" haslink="/22-avominguante.html" class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./22-avominguante.html"><div class="image" data-v-cardsinfo=""><img src="./ilustracoes-pingodoce/avominguante.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" data-v-cardsinfo=""></div> <!----> <div class="meta" data-v-cardsinfo="">
+    <p class="title" data-v-cardsinfo="">AVÔ MINGUANTE</p> <p class="year" data-v-cardsinfo="">2022</p></div></a> 
+<!--olivro-->
+  <a   scale="1" type="small"  haslink="/23-olivroquenaosabiaoquequeriaser.html"  class="card" style="color:#000" data-v-cardsinfo="" data-v-cardsmain="" href="./23-olivroquenaosabiaoquequeriaser.html">
+    <div class="image" data-v-cardsinfo=""><img src="./ilustracoes-pingodoce/olivroquenaosabiaoquequeriaser.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px" data-v-cardsinfo=""></div> 
+    <!----> <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">O LIVRO QUE NÃO SABIA O QUE QUERIA SER</p> <p class="year" data-v-cardsinfo="">2023</p></div></a> 
+   
+   <!--csillustration-->
+    <a    scale="2" type="large" haslink="/24-csillustration.html" class="card" style="color:#0050b7" data-v-cardsinfo="" data-v-cardsmain="" href="./24-csillustration.html">
+        <div class="image" data-v-cardsinfo=""><img src="./cs-illustartion/cs-banner.png" alt="" loading="lazy" sizes="(max-width: 375px) 250px, (max-width: 768px) 300px, (max-width: 1200px) 500px, (max-width: 1500px) 750px, 1500px"  data-v-cardsinfo=""></div> 
+    
+    <div class="meta" data-v-cardsinfo=""><p class="title" data-v-cardsinfo="">SPLASH ART CONCEPT (CSGO)</p> 
+      <p class="year" data-v-cardsinfo="">2021</p></div></a> <!---->    
 <!---->
    <!----> <!---->
-   <a href="https://www.youtube.com/watch?v=-4jh2533w2s" target="_blank" scale="2" type="featured" haslink="https://www.youtube.com/watch?v=-4jh2533w2s" class="card" style="color:#fff" data-v-cardsinfo="" data-v-cardsmain="" bright="true">
+   <a href="./25-drawings.html" haslink="/25-drawings.html" target="_blank" scale="2" type="featured" class="card" style="color:#fff" data-v-cardsinfo="" data-v-cardsmain="" bright="true">
     
-    <p class="label" data-v-cardsinfo="">Featured Project</p> 
+    <p class="label" data-v-cardsinfo="">OTHER PROJECTS</p> 
     <div class="meta" data-v-cardsinfo=""  >
-        <p class="title" data-v-cardsinfo="">Adobe XD Masterclass in San Fransisco</p> 
-        <p class="year" data-v-cardsinfo="">2018</p>
+        <p class="title" data-v-cardsinfo="">BLACK AND WHITE REALISM DRAWINGS</p> 
+        <p class="year" data-v-cardsinfo="">2017 - 2025</p>
         <div class="infoBtn-container" data-v-cardsinfo="">
             <p class="infoBtn" data-v-cardsinfo=""><svg width="25" height="25" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.675318 7.84315L0.675318 6.4907L11.4153 6.4907L6.68178 1.75713L7.63645 0.802462L14.0009 7.16692L7.63645 13.5314L6.68178 12.5767L11.4153 7.84315L0.675318 7.84315Z" fill="white" class="svelte-wnl227"></path></svg></p>
         </div>
@@ -343,7 +380,7 @@
     
     </div>
     <div class="image" data-v-cardsinfo="">
-        <img src="./pintura-all/drawing1.png" alt="" loading="lazy" sizes="(max-width: 375px) 500px, (max-width: 768px) 600px, (max-width: 1200px) 1000px, (max-width: 1500px) 1500px, 2500px" srcset="./pintura-all/drawing1.png 500w, ./pintura-all/drawing1.png 600w, ./pintura-all/drawing1.png 1000w, ./pintura-all/drawing1.png 1500w, ./pintura-all/drawing1.png 2500w" data-v-cardsinfo="">
+        <img src="./drawings/drawings1.png" alt="" loading="lazy" sizes="(max-width: 375px) 500px, (max-width: 768px) 600px, (max-width: 1200px) 1000px, (max-width: 1500px) 1500px, 2500px" data-v-cardsinfo="">
     </div> 
 </a><!----> 
 <div id="about" class="line-separator"></div>
