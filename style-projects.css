@@ -917,10 +917,9 @@ cursor: pointer;
     height: 60px;
     width: auto;
     margin: 0 -1px;
+    animation: slider-top-banner 30s linear 0s infinite
 }
-.marquee-animation img.animated {
-	animation: slider-top-banner 30s linear 0s infinite
-}
+
 @keyframes slider-top-banner {
 	from {
 		transform: translateX(0)
