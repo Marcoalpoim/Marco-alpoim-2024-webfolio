@@ -19,14 +19,14 @@ document.getElementById('openMenu').addEventListener('click', function() {
    // Use a small timeout to trigger the transition after the menu is added
    setTimeout(function() {
        document.querySelector('.menu').classList.add('open');
-       document.querySelector('.index').style.filter = 'blur(90px)';
+       //document.querySelector('.index').style.filter = 'blur(90px)';
        document.getElementById('fadeDiv').style.filter = 'blur(90px)';
    }, 10); // Delay to ensure rendering before transition
 
    // Add the close functionality
    document.getElementById('closeMenu').addEventListener('click', function() {
        document.querySelector('.menu').classList.remove('open');
-       document.querySelector('.index').style.filter = 'blur(0px)';
+       //document.querySelector('.index').style.filter = 'blur(0px)';
        document.getElementById('fadeDiv').style.filter = 'blur(0px)';
    });
 });
