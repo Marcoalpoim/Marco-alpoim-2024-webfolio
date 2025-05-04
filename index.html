@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style3.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
+    
 </head>
 <body>
 
@@ -98,10 +98,10 @@
                                     <span data-v-aboutinfo="">2025</span></p>
             </div>
         </div> 
-
+<!--START INTRO
 <div id="fadeDiv" class="staggered-container" >
         <div class="staggeredtext-container" >
-            <!-- Placeholder for the animated text -->
+         
             <div id="staggered-text" class="staggered-text"></div>
             <div id="staggered-text2" class="staggered-text2"></div> 
         
@@ -117,7 +117,7 @@
         
         <div class="staggeredtext-container" >
          
-            <!-- Placeholder for the animated text -->
+       
         
             <div id="staggered-text3" class="staggered-text"></div>
             <span class="line">
@@ -134,7 +134,7 @@
         
         <div class="staggeredtext-container" >
         
-            <!-- Placeholder for the animated text -->
+         
         
             <div id="staggered-text5" class="staggered-text"></div>
             <span class="line">
@@ -151,6 +151,17 @@
         </div>
 
     </div>
+END INTRO-->
+
+    <div id="__nuxt"><!---->
+        <div id="__layout">
+            <div id="container" ontouchmove="" style="opacity:0" visible="visible">
+
+                    <div class="index" visible="visible"></div> 
+             </div>
+        </div>
+    </div>
+
 <!--TETETE-->
 
 
@@ -164,6 +175,7 @@
 </div>
 -->
 <div class="scroll-animation" id="onscrollremove">
+    
     <div class="chevron"></div>
     <div class="chevron"></div>
     <div class="chevron"></div>
@@ -561,6 +573,18 @@ window.addEventListener('scroll', function() {
 </main> 
 
 
+<div class="featured stacked-cards">
+    <ul class="slider">
+    <li class="item"><h2>Headline</h2></li>
+<li class="item"><h2>Headline</h2></li>
+<li class="item"><h2>Headline</h2></li>
+<li class="item"><h2>Headline</h2></li>
+<li class="item"><h2>Headline</h2></li>
+<li class="item"><h2>Headline</h2></li>
+</ul>
+</div>
+
+<script></script>
 <footer data-v-footertext="" data-v-cardsmain="">
     <div class="social" data-v-footertext=""><p data-v-footertext="">
     <a target="_blank" href="https://www.instagram.com/marcoalpoim/" data-v-footertext="">Instagram</a></p> <p data-v-footertext="">
@@ -582,6 +606,7 @@ window.addEventListener('scroll', function() {
 
 
    <script> 
+   /*
 window.addEventListener('pageshow', (event) => {
     if (event.persisted) {
         // Limpa estados antigos e recomeça animação
@@ -662,12 +687,7 @@ window.addEventListener('pageshow', (event) => {
     timeoutIds.push(delayTimeoutId);
 });
     
-/*
-    $(document).ready(function() {
-$('#loader img').attr('src', './loader.gif');
-// Other startup code
-});
-*/
+
 
 document.addEventListener('DOMContentLoaded', () => {
      // Image Animation
@@ -679,7 +699,7 @@ document.addEventListener('DOMContentLoaded', () => {
        }, 0);
     
  });
- 
+ */
 
      // Select the header element
      const header = document.querySelector('header');
@@ -694,33 +714,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-/*
-    window.addEventListener("load", function() {
-            const loader = document.getElementById("loader");
-            const content = document.getElementById("content");
-
-            // Show loader for 6 seconds
-            setTimeout(function() {
-                // Slide up the loader
-                loader.classList.add("loader-hidden");
-
-
-            }, 5500); // 6000 ms = 6 seconds
-        });
-
-        // When the page is about to unload (refresh or navigate away), make the loader visible
-        window.addEventListener("beforeunload", function() {
-            const loader = document.getElementById("loader");
-            loader.classList.add("loader-visible");
-        });
-
-        // Reset loader visibility on page load
-        window.addEventListener("DOMContentLoaded", function() {
-            const loader = document.getElementById("loader");
-            loader.classList.add("loader-visible"); // Ensure loader is visible on initial load
-            loader.classList.remove("loader-hidden"); // Reset the slide-up state
-        });
-*/
+    
 </script>
 
 
@@ -806,6 +800,12 @@ window.addEventListener('pageshow', function (event) {
     }
 });
   </script>
-
+<script defer="" src="./intro-js/state.js"></script>
+<script src="./intro-js/intro1.js" defer=""></script>
+<script src="./intro-js/intro2.js" defer=""></script>
+<script src="./intro-js/intro3.js" defer=""></script>
+<script src="./intro-js/intro4.js" defer=""></script>
+<script src="./intro-js/intro5.js" defer=""></script>
+<script src="./intro-js/intro6.js" defer=""></script>
 </body>
 </html>

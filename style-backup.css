@@ -446,6 +446,133 @@ header {
  
   /* Image styles */
  
+ 
+ 
+         .line {
+             margin: 1dvw 2dvw;
+     height: 8.5vw;
+     line-height: inherit;
+ 
+     white-space: nowrap;
+     }
+ 
+     .img {
+        
+       transition: width 2s cubic-bezier(0.86,0,0.07,1) 0.5s;
+       width: 0;
+       overflow: hidden;
+       border-radius: 10px;
+       display: inline-block;
+     height: 100%;
+     will-change: transform;
+     }
+ 
+     .img.expand {
+       width: 15vw; /* Final expanded width */
+     }
+ 
+     span img {
+      width: 15vw;
+       height: auto;
+       border-radius: inherit;
+       display: block;
+       margin: 0 auto;
+ 
+     }
+     span video {
+      width: 15vw;
+       height: auto;
+       border-radius: inherit;
+       display: block;
+       margin: 0 auto;
+ 
+     }
+     .image-container{
+      display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+     }
+
+ .line small {
+     bottom: 0%;
+     display: inline-block;
+     font-family: Inter, Helvetica, Arial, sans-serif;
+     font-size: 1rem;
+     font-style: normal;
+     font-weight: 400;
+     left: .5em;
+     letter-spacing: 0;
+     line-height: 1;
+     position: relative;
+     opacity: 0;
+     animation: small-enter 0.6s cubic-bezier(0.39,0.575,0.565,1) 1s forwards; /* Bounce animation */
+ }
+ 
+ 
+ /* Bounce Keyframes */
+ @keyframes small-enter {
+     0% {
+         opacity: 0; /* Start from below */
+     }
+
+     100% {
+        opacity: 1;  /* Settle in final position */
+     }
+ }
+ 
+
+
+ @media only screen and (max-width: 768px) {
+  .img.expand {
+    width: 10vw; /* Final expanded width */
+  }
+  .line small {
+  display: none;}
+
+  .staggered-text span.visible {
+ 
+    animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1) forwards; /* Bounce animation */
+}
+.staggered-text2 span.visible {
+
+  animation: bounce 1.5s cubic-bezier(0.86,0,0.07,1)  forwards; /* Bounce animation */
+}
+  .staggeredtext-container {
+    height: 13dvw;
+    
+
+}
+    .staggered-text span {
+        font-size: 14vw;
+    }
+    .staggered-text2 span {
+        font-size: 14vw;
+    
+    }
+    .img {  
+    border-radius: 5px;
+    }
+    .line {
+        height: 12vw;
+        margin: 1dvw 1dvw;
+    }
+
+ /* Bounce Keyframes */
+ @keyframes bounce {
+    0% {
+        transform: translateY(150px); /* Start from below */
+    }
+    60% {
+        transform: translateY(0px); /* Go above the final position */
+    }
+    100% {
+        transform: translateY(0); /* Settle in final position */
+    }
+}
+}
+
+
 
 .hamburger-menu {
     left: 50%;
