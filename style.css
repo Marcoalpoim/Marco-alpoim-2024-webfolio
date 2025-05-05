@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap);
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url("https://use.typekit.net/nrf8ylf.css");
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 
 .bebas-neue-regular {
@@ -161,7 +159,7 @@ header {
     left: calc(var(--padding) + var(--safe-area-inset-left));
     position: sticky;
      top: calc(2rem + var(--safe-area-inset-top)); 
-    /* display: block; */
+  
     width: 90%;
     gap: 20%;
     z-index: 2;
