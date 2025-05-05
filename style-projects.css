@@ -302,7 +302,6 @@ header {
     top: -100%;
     right: 5%;
     width: 90%;
-    height: 80%;
     background-color: rgb(255 255 255 / 35%);
     backdrop-filter: blur(15px);
     padding: var(--padding) calc(var(--padding) + var(--safe-area-inset-right)) var(--padding) calc(var(--padding) + var(--safe-area-inset-left));
