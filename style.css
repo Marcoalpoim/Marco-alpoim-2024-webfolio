@@ -296,10 +296,10 @@ header {
   grid-template-rows: 1fr auto 1fr 2rem;
   touch-action: none;
     position: fixed;
-    top: -100%;
+    top: -200%;
     right: 5%;
     width: 90%;
-    height: 80%;
+    height: 100dvh;
     background-color: rgb(255 255 255 / 35%);
     backdrop-filter: blur(15px);
     padding: var(--padding) calc(var(--padding) + var(--safe-area-inset-right)) var(--padding) calc(var(--padding) + var(--safe-area-inset-left));
@@ -763,11 +763,29 @@ border: 1px solid white;
         background-color: #00bcd4;
       display:flex;}
 
-      .slider li h2{
+      .slider li.item {
+       display: flex;
+    align-items: flex-start;
+    gap: 15px;
+ 
+    opacity: var(--text-opacity, 1);
+    will-change: opacity;
+  }
+
+      .slider li p{
         margin-top: auto;
-        background: #fff;
+        background: #3b383875;
         width: 100%;
         padding: 20px 20px;
+        display: block;
+        bottom: 0;
+      
+      }
+      .slider li svg{
+        margin-top: auto;
+      
+        width: 10%;
+        padding: 2px;
         display: block;
         bottom: 0;
       
