@@ -908,7 +908,7 @@ cursor: pointer;
     grid-column: span 2;
     width: 100%;
     border-radius: 1rem;
-}
+}/*
 .marquee-animation img {
 	position: relative;
 	will-change: transform;
@@ -919,6 +919,7 @@ cursor: pointer;
     margin: 0 -1px;
     animation: slider-top-banner 30s linear 0s infinite
 }
+*/
 
 @keyframes slider-top-banner {
 	from {
