@@ -910,13 +910,13 @@ cursor: pointer;
     border-radius: 1rem;
 }
 .marquee-animation img {
-/*	position: relative;*/
+/*	position: relative;
 	will-change: transform;
 	display: inline-block;
 	font-size: 0;
     height: 60px;
     width: auto;
-    margin: 0 -1px;
+    margin: 0 -1px;*/
     animation: slider-top-banner 30s linear 0s infinite
 }
 
