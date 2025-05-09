@@ -355,13 +355,16 @@ window.addEventListener('load', () => {
   slideDownBanner.classList.add('slidedownbanner');
 
   setTimeout(function() {
-  				$('.marquee-animation img').addClass('animated');
-                
-  			}, 900);
+    var el = document.querySelector('.marquee-animation img');
+    el.offsetHeight; // força reflow
+    el.classList.add('animated');
+}, 1000);
 
               setTimeout(function() {
-                  $('.marquee-animation2 img').addClass('animated2');
-  			}, 1000);
+    var el = document.querySelector('.marquee-animation2 img');
+    el.offsetHeight; // força reflow
+    el.classList.add('animated2');
+}, 1000);
 
 });
 document.addEventListener("DOMContentLoaded", function () {
