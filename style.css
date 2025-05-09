@@ -762,46 +762,62 @@ border: 1px solid white;
       display:flex;}
 
       .slider li.item {
+        overflow: hidden;
        display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px;
- 
+ justify-content: center;
     opacity: var(--text-opacity, 1);
     will-change: opacity;
   }
 
       .slider li p{
+       font-family: "Formula Condensed",Helvetica,Arial,sans-serif;
+        font-size: 1.5rem;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
+        font-weight: 400;
+       
+    bottom: 10px;
+        position: absolute;
         margin-top: auto;
         background: #3b383875;
         width: 100%;
         padding: 20px 20px;
         display: block;
         bottom: 0;
+         z-index: 99;
       
       }
       .slider li svg{
-        margin-top: auto;
-      
-        width: 10%;
-        padding: 2px;
-        display: block;
-        bottom: 0;
+        cursor: pointer;
+    position: absolute;
+    margin-top: auto;
+    right: 10px;
+    bottom: 10px;
+    width: auto;
+    padding: 3px;
+    display: block;
+    z-index: 100;
       
       }
       .slider li:nth-child(n) {
-        background-color: #3599db;
+        background-color: #3599db00;
       }
       .slider li:nth-child(2n) {
-        background-color: #e61b77;
+        background-color: #e61b7600;
       }
       .slider li:nth-child(3n) {
-        background-color: #00bcd4;
+        background-color: #00bbd400;
       }
       .slider li:nth-child(4n) {
-        background-color: #f4b251;
+        background-color: #f4b35100;
       }
       .slider li:nth-child(5n) {
-        background-color: #8e4497;
+        background-color: #8d449700;
       }
   
   
@@ -812,6 +828,20 @@ border: 1px solid white;
     padding: 5%;
     overflow: hidden;
   }
+.stacked-cards P{
+  font-family: "Formula Condensed", Helvetica, Arial, sans-serif;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 0 2rem;
+    padding-bottom: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffff;
+  }
+
   .stacked-cards ul {
       position: relative;
       max-width: 60%;
@@ -840,10 +870,10 @@ border: 1px solid white;
       top: 0;
   }
   .stacked-cards li img {
-      position: relative;
-      display: block;
-      max-width: 100%;
-      height: auto;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
       z-index: 4;
   }
   .stacked-cards li.active {
@@ -851,3 +881,18 @@ border: 1px solid white;
       box-shadow: 0 5px 10px 0px #333;
       transition: 0.5s ease transform;
   }
+  @media only screen and (max-width: 768px) {
+    .stacked-cards ul {
+    height: 250px !important;
+}
+     .slider li {
+      height: 200px;
+      width:200px;
+      border-radius: 4px;
+        background-color: #00bcd4;
+      display:flex;}
+      .stacked-cards li img {
+    
+    left: -5%;
+}
+    }
