@@ -919,7 +919,7 @@ cursor: pointer;
     margin: 0 -1px;*/
 }
 
-.marquee-animation img.animated, .marquee-animation2 img.animated {
+.marquee-animation img.animated, .marquee-animation2 img.animated2 {
 
     animation: slider-top-banner 30s linear 0s infinite;
 }
