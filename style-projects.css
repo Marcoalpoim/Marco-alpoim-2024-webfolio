@@ -910,6 +910,7 @@ cursor: pointer;
 }
 .marquee-animation img, .marquee-animation2 img {
     height: 60px;
+    will-change: transform;
 	/*position: relative;
 	will-change: transform;
 	display: inline-block;
