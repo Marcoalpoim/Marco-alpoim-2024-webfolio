@@ -354,17 +354,13 @@ window.addEventListener('load', () => {
   const slideDownBanner = document.getElementById('slide-down');
   slideDownBanner.classList.add('slidedownbanner');
 
-  setTimeout(function() {
-    var el = document.querySelector('.marquee-animation img');
-    el.offsetHeight; // força reflow
-    el.classList.add('animated');
-}, 1000);
+ setTimeout(function() {
+    $('.marquee-animation img').addClass('animated');
+}, 900);
 
-              setTimeout(function() {
-    var el = document.querySelector('.marquee-animation2 img');
-    el.offsetHeight; // força reflow
-    el.classList.add('animated2');
-}, 1000);
+setTimeout(function() {
+    $('.marquee-animation2 img').addClass('animated2');
+}, 3000);
 
 });
 document.addEventListener("DOMContentLoaded", function () {
