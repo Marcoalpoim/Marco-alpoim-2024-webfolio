@@ -898,18 +898,17 @@ transition: 1s all ease;
 cursor: pointer;
 }
 
-.marquee-animation {
+.marquee-animation, .marquee-animation2 {
 	height: auto;
 	display: block;
 	overflow: hidden;
-
 	white-space: nowrap;
 	cursor: pointer;
     grid-column: span 2;
     width: 100%;
     border-radius: 1rem;
 }
-.marquee-animation img {
+.marquee-animation img, .marquee-animation2 img {
     height: 60px;
 	/*position: relative;
 	will-change: transform;
@@ -920,7 +919,7 @@ cursor: pointer;
     margin: 0 -1px;*/
 }
 
-.marquee-animation img.animated {
+.marquee-animation img.animated, .marquee-animation2 img.animated {
 
     animation: slider-top-banner 30s linear 0s infinite;
 }
