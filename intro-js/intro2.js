@@ -13,7 +13,7 @@ n.locals={},t.exports=n},
         e("span",{staticClass:"row",attrs:{row:"2","aria-hidden":"true"}},[
         
                  e("AnimatedLine",{attrs:{text:t.lines[0],line:0,delay:.5}}),t._v(" "),
-              e("AnimatedImage",{attrs:{src:"./relogios/relogios-intro.png",index:"01"}})],1),t._v(" "),
+              e("AnimatedImage",{attrs:{src:"./telepizza/telepizza-banner.webp",index:"01"}})],1),t._v(" "),
               
         e("span",{staticClass:"row",attrs:{row:"2","aria-hidden":"true"}},[
             e("AnimatedLine",{attrs:{text:t.lines[1],line:2,delay:.5}}),t._v(" "),
