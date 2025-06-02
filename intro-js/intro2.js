@@ -13,17 +13,17 @@ n.locals={},t.exports=n},
         e("span",{staticClass:"row",attrs:{row:"2","aria-hidden":"true"}},[
         
                  e("AnimatedLine",{attrs:{text:t.lines[0],line:0,delay:.5}}),t._v(" "),
-              e("AnimatedImage",{attrs:{src:"./telepizza/telepizza-banner.webp",index:"01"}})],1),t._v(" "),
+              e("AnimatedImage",{attrs:{src:"./telepizza/telepizza-banner.webp"}})],1),t._v(" "),
               
         e("span",{staticClass:"row",attrs:{row:"2","aria-hidden":"true"}},[
             e("AnimatedLine",{attrs:{text:t.lines[1],line:2,delay:.5}}),t._v(" "),
-            e("AnimatedImage",{attrs:{src:"./ssam/ssam-banner.png",index:"02"}}),t._v(" "),
+            e("AnimatedImage",{attrs:{src:"./ssam/ssam-banner.png"}}),t._v(" "),
             e("AnimatedLine",{attrs:{text:t.lines[2],line:2,delay:.5}})],1),t._v(" "),
 
         e("span",{staticClass:"row",attrs:{row:"3","aria-hidden":"true"}},[
           
             e("AnimatedLine",{attrs:{text:t.lines[3],line:3,delay:.5}}),t._v(" "),
-            e("AnimatedImage",{attrs:{src:"./computersaysno/csn-intro.png",index:"04"}})],1),t._v(" "),
+            e("AnimatedImage",{attrs:{src:"./computersaysno/csn-intro.png"}})],1),t._v(" "),
             
 
         ])])}),[],!1,null,"0a11aa9b",null);
