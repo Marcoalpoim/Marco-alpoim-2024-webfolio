@@ -624,7 +624,7 @@ rotate: 40deg;
  
 
     height: 100% !important; /* Move to original position */
-    animation: slidingdownimage 1s var(--ease-out-quint) forwards; /* Bounce animation */
+    animation: slidingdownimage 1s cubic-bezier(0.23, 1, 0.48, 1.26) forwards; /* Bounce animation */
 }
 
 

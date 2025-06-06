@@ -869,7 +869,7 @@ footer[data-v-cardsmain] {
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: .5s opacity var(--ease-out-cubic);
+    transition: .5s opacity cubic-bezier(0.19, 1, 0.4, 1.35);
     width: 100%
 }
 @media only screen and (max-width: 768px) {
@@ -886,7 +886,7 @@ footer[data-v-cardsmain] {
     object-fit: cover;
     position: absolute;
     top: -2.5%;
-    transition: .5s transform var(--ease-out-cubic);
+    transition: .5s transform cubic-bezier(0.19, 1, 0.4, 1.35);
     width: 100%;
 }
 
@@ -898,7 +898,7 @@ footer[data-v-cardsmain] {
     object-fit: cover;
     position: absolute;
     top: -2.5%;
-    transition: .5s transform var(--ease-out-cubic);
+    transition: .5s transform cubic-bezier(0.19, 1, 0.4, 1.35);
     width: 105%
 }
 
@@ -1089,7 +1089,7 @@ footer[data-v-cardsmain] {
     position: relative;
     border: 1px solid white;
     border-radius: 50rem;
-    transition: all 1s cubic-bezier(0.19,1,0.22,1);
+    transition: all 1s cubic-bezier(0.19, 1, 0.4, 1.35);
     overflow: hidden;
 }
 
@@ -1104,7 +1104,7 @@ footer[data-v-cardsmain] {
     color: white;
     background-color: rgba(255, 255, 255, 0.096);
     border-radius: 50rem;
-    transition: all 1s cubic-bezier(0.19,1,0.22,1);
+    transition: all 1s cubic-bezier(0.19, 1, 0.4, 1.35);
     overflow: hidden;
 
 }
