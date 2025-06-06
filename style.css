@@ -284,7 +284,7 @@ header {
     transition: opacity .2s cubic-bezier(0.39,0.575,0.565,1);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1440px) {
   #container {
     padding-top: 0px !important;
 
