@@ -280,7 +280,7 @@ header {
 }
 
 #container {
-    padding-top: var(--padding);
+    padding-top: 5px !important;
     transition: opacity .2s cubic-bezier(0.39,0.575,0.565,1);
 }
 
