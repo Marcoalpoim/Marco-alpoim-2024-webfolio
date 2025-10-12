@@ -1,0 +1,76 @@
+/*CSS referente rede do highcharts*/
+
+
+/*dimensão do objeto*/
+figure {
+    width: 100vw;
+    height: 100vh;
+    top:0;
+   
+}
+
+
+/*cor de fundo*/
+rect {
+  fill:#ec080800;
+display: block;
+  width: 100%;
+  margin: 0 auto;
+  border:1px solid rgba(0, 255, 255, 0);
+}
+
+
+/*retirar linha do marcador quando a animação parar*/
+.highcharts-markers {
+  stroke-width: 0px;
+}
+
+
+
+
+
+
+/*configuração peso da fonte*/
+.highcharts-data-label{
+  color: white !important;
+  font-family:  "Vazirmatn Medium", Helvetica, sans-serif !important;
+
+}
+
+
+
+
+/*retirar linha do marcador quando ativo*/
+.highcharts-point-active {
+  stroke:0 !important;
+}
+
+/*cor das linhas que ligam e do marcador*/
+.highcharts-point {
+  stroke-width: 1 !important;
+  stroke: #5cff5c !important;
+  fill: #000000;
+
+  
+ 
+}
+
+/*opacidade das linhas e marcador quando nao ativadas e animação parada*/
+ .highcharts-point-inactive{
+  opacity: 0.1 !important;
+}
+
+/*retirar halo que ocorre com hover*/
+.highcharts-halo {
+  fill-opacity: 0;
+  stroke-width: 0;
+}
+
+.highcharts-data-label-box{
+    fill:transparent !important;
+  }
+
+  @media only screen and (max-width: 1080px) {
+ 
+  
+  }
