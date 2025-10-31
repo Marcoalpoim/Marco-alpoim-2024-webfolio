@@ -15,7 +15,7 @@
     font-family: "Formula Condensed";
     font-style: normal;
     font-weight: 700;
-    src: url(/font/FormulaCondensed-Bold.woff2) format("woff2"),url(/font/FormulaCondensed-Bold.woff) format("woff")
+    src: url(./font/FormulaCondensed-Bold.woff2) format("woff2"),url(./font/FormulaCondensed-Bold.woff) format("woff")
   }
 
       /* Style for the whole page */
